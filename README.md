@@ -1,18 +1,22 @@
-The purpose of this project is to establish a wholesome iOS development
-approach that is amenable to incremental development.
+Vanguard Project
+===================
 
-It is established on the following core principles:
+An iOS project template for speedy technical learning, and refinement of development process.
 
+It explores the following core principles:
+
+ - Xcode configuration — to support multiple configurations
+ — Modular assemblies — use of frameworks, static libraries, sub-applications to split into sub-project levels
+ - iOS code architectures — explore use of MVVM and VIPER architectures
  - Continuous integration / Continuous deployment
  - Release early, release often
- - Modular code; isolate changes
- - Modular architecture — adopt MVVM and VIPER patterns, and contain logic in their module.
- - ONE target, but multiple schemes.
+ - Simplicity: minimal targets, but multiple schemes.
+
+XCode Concepts
+================
 
 Targets
-=======
-
- - ONE main target, ONE test target, but MULTIPLE schemes.
+-------
 
 (?) What can the integration tests test realistically?
 
@@ -21,7 +25,7 @@ Schemes map to Configurations ONE TO ONE.
 
 
 Environments as XCode Configurations
-====================================
+------------------------------------
 
 In principle, we would like to support four principle environments:
 
