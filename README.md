@@ -28,7 +28,7 @@ In principle, we would like to support four principle environments:
 |            | Frontend                                    | Backend    | Notes                                         |
 |------------|---------------------------------------------|------------|-----------------------------------------------|
 | dev        | iOS Simulator /  iDevice (XCode dev device) | ???        | Super-fast iterations                         |
-| ci         | iDevice (ship.io)                           | ???        | Detect regressions fast                       |
+| ci         | iDevice (greenhouseci.com)                  | ???        | Detect regressions fast                       |
 | stage      | iDevice (Internal Testers)                  | loaf-stage | For quality assurance before pushing to users |
 | prod       | iDevice (External Testers)                  | loaf-prod  |                                               |
 
