@@ -32,6 +32,8 @@ In principle, we would like to support four principle environments:
 | stage      | iDevice (Internal Testers)                  | loaf-stage | For quality assurance before pushing to users |
 | prod       | iDevice (External Testers)                  | loaf-prod  |                                               |
 
+Notes:
+
  - Tests (for the test target) are developed in `dev`, and the same tests are run in CI.
 
 (?) To what degree can the sync-gateway be set up?
