@@ -478,7 +478,7 @@
 				INFOPLIST_FILE = VanguardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "Vanguard-iOSTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanguard.app/Vanguard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanguard-iOS.app/Vanguard-iOS";
 			};
 			name = Debug;
 		};
@@ -494,7 +494,7 @@
 				INFOPLIST_FILE = VanguardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "Vanguard-iOSTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanguard.app/Vanguard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanguard-iOS.app/Vanguard-iOS";
 			};
 			name = Release;
 		};
