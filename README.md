@@ -68,7 +68,11 @@ With Couchbase, we'll be looking for a Model layer that is also responsible for 
 (?) How can a change of scheme specify differences in code compilation?
 (!) See DEBUG preprocessor flag.
 
-Couchbase Support
------------------
 
-Test by skipping all the things
+TODOs
+----------
+
+### Integration Testing
+
+ - Build a simple passing Subliminal test.
+    - Subliminal requires app hooks; declare them very carefully to check the state of something.
