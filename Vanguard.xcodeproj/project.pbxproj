@@ -85,9 +85,9 @@
 				0B3A91341A44B82E0032C0AE /* AppDelegate.m */,
 				0B3A91361A44B82E0032C0AE /* ViewController.h */,
 				0B3A91371A44B82E0032C0AE /* ViewController.m */,
-				0B3A91391A44B82E0032C0AE /* Main.storyboard */,
 				0B3A913C1A44B82E0032C0AE /* Images.xcassets */,
 				0B3A913E1A44B82E0032C0AE /* LaunchScreen.xib */,
+				0B3A91391A44B82E0032C0AE /* Main.storyboard */,
 				0B3A912F1A44B82E0032C0AE /* Supporting Files */,
 			);
 			path = Vanguard;
