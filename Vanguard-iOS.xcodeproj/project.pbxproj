@@ -204,6 +204,7 @@
 				TargetAttributes = {
 					0B3A912B1A44B82E0032C0AE = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 6DSUZ3L55C;
 					};
 					0B3A91441A44B82E0032C0AE = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -445,6 +446,7 @@
 			baseConfigurationReference = 4D95E20CE33C53257C736DA2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Vanguard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Vanguard-iOS";
@@ -456,6 +458,7 @@
 			baseConfigurationReference = 2A5D386373F6C48D0AFBE2F1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Vanguard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Vanguard-iOS";
