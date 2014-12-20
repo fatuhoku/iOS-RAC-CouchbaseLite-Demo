@@ -6,6 +6,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MESRecipeCollectionViewModel.h"
 #import "MESRecipeCollection.h"
+#import "TLIndexPathDataModel.h"
 
 
 @interface MESRecipeCollectionViewModel ()
@@ -18,7 +19,9 @@
     self = [super init];
     if (self) {
         // RAC Bindings
-        NSAssert(self.outputModel, @"outputModel not available");
+        RAC(self, dataModel) = [RACObserve(self, recipeCollection) map:^(MESRecipeCollection *collection) {
+            return [[TLIndexPathDataModel alloc] initWithItems:collection.recipes];
+        }];
     }
     return self;
 }

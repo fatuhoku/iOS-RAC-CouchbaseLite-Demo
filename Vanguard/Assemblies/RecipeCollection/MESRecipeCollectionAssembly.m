@@ -9,7 +9,7 @@
 
 @implementation MESRecipeCollectionAssembly
 
-- (MESRecipeCollectionViewCellViewModel *)
+// (?) Which of these will Typhoon pick?
 
 - (NSArray *)britishRecipes {
     return [TyphoonDefinition withClass:[MESRecipeCollection class] configuration:^(TyphoonDefinition *definition) {

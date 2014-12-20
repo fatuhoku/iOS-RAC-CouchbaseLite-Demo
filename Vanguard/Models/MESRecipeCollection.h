@@ -8,4 +8,6 @@
 
 @interface MESRecipeCollection : NSObject
 @property(nonatomic, strong) NSArray *recipes;
+
+- (instancetype)initWithRecipes:(NSArray *)recipes;
 @end
