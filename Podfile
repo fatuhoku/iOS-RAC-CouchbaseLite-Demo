@@ -5,6 +5,7 @@ inhibit_all_warnings!
 pod 'BlocksKit'
 pod 'Overline-BlocksKit'
 pod 'ReactiveCocoa'
+pod 'TLIndexPathTools'
 pod 'Typhoon'
 pod 'couchbase-lite-ios'
 
