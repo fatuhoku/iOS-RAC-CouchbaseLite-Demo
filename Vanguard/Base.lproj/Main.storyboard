@@ -4,39 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Recipe Creation View Controller-->
-        <scene sceneID="JzQ-kp-dCq">
-            <objects>
-                <viewController id="cLH-kA-fJO" customClass="MESRecipeCreationViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ih4-P0-Vog"/>
-                        <viewControllerLayoutGuide type="bottom" id="4wl-3g-NmO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="esU-LS-Uq6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are cooking &lt;name&gt;!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84G-Wp-boY">
-                                <rect key="frame" x="22" y="270" width="556" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="84G-Wp-boY" secondAttribute="centerY" id="0yD-cH-gI6"/>
-                            <constraint firstAttribute="centerX" secondItem="84G-Wp-boY" secondAttribute="centerX" id="pQq-w8-8Up"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="nameLabel" destination="84G-Wp-boY" id="CBu-w9-BgX"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QbF-6h-nh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1660" y="1090"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="59h-VS-nTc">
             <objects>
@@ -77,9 +44,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="cLH-kA-fJO" kind="show" id="1vP-Zs-ELT"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

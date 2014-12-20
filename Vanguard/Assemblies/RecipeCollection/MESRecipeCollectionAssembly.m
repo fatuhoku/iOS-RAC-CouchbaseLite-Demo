@@ -4,17 +4,18 @@
 //
 
 #import "MESRecipeCollectionAssembly.h"
-#import "MESRecipe.h"
 
 
 @implementation MESRecipeCollectionAssembly
 
-// This is what will carry the name over to the outputViewController.
-- (MESRecipe *)nameModelThatIsEffectivelyPassedBetweenViewControllers {
-    return [TyphoonDefinition withClass:[MESRecipe class]
-                          configuration:^(TyphoonDefinition *definition) {
-                              definition.scope = TyphoonScopeWeakSingleton;
-                          }];
+// We want to set up a reactive list, set up by
+
+- (NSArray *)liveRecipeCollection {
+    return @[@"Recipe A", @"Recipe B", @"Recipe C"];
+}
+
+- (NSArray *)recipes {
+    return @[@"Recipe A", @"Recipe B", @"Recipe C"];
 }
 
 @end

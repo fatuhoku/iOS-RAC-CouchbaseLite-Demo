@@ -16,12 +16,10 @@
 		1375A4FDDA464F02FDD44777 /* libPods-Vanguard-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */; };
 		886B116078B455666162E5D6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1834B6DEA2C7A1C2B6140641 /* libPods.a */; };
 		E22BA025EB75ECE4ED0AF056 /* MESRecipeCollectionAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAA14BE782B7953F81AC7 /* MESRecipeCollectionAssembly.m */; };
-		E22BA1DCF0EFAFF91262DA20 /* MESRecipeCreationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA4D243C077E9ACD2D62E /* MESRecipeCreationPresenter.m */; };
 		E22BA43BC250316E28C28F54 /* MESRecipeCollectionPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA96AC90C91FF06E60B65 /* MESRecipeCollectionPresenter.m */; };
 		E22BA9DC74344EDD14E43E43 /* MESRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAD95956060A99FF19C60 /* MESRecipe.m */; };
-		E22BAB17D64FEACE949586F9 /* MESRecipeCollectionInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA0134E0083DAED696936 /* MESRecipeCollectionInteractor.m */; };
+		E22BAB17D64FEACE949586F9 /* MESRecipeCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA0134E0083DAED696936 /* MESRecipeCollectionViewModel.m */; };
 		E22BADFFE1BFF2C8C1C9C697 /* MESRecipeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAA5A4F1D643E0284261E /* MESRecipeCollectionViewController.m */; };
-		E22BAE53713B6200AD86815A /* MESRecipeCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAB329AF837FB6D7FF788 /* MESRecipeCreationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,20 +48,16 @@
 		2A5D386373F6C48D0AFBE2F1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4D95E20CE33C53257C736DA2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		901AC531AED698A1E1144DF2 /* Pods-Vanguard-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanguard-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vanguard-iOSTests/Pods-Vanguard-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E22BA0134E0083DAED696936 /* MESRecipeCollectionInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionInteractor.m; sourceTree = "<group>"; };
-		E22BA4D243C077E9ACD2D62E /* MESRecipeCreationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCreationPresenter.m; sourceTree = "<group>"; };
+		E22BA0134E0083DAED696936 /* MESRecipeCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionViewModel.m; sourceTree = "<group>"; };
 		E22BA65C7FCAD34D8E2AF4F1 /* MESRecipeCollectionAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionAssembly.h; sourceTree = "<group>"; };
-		E22BA6D3363BA80997D9D8C6 /* MESRecipeCollectionInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionInteractor.h; sourceTree = "<group>"; };
+		E22BA6D3363BA80997D9D8C6 /* MESRecipeCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionViewModel.h; sourceTree = "<group>"; };
 		E22BA77B6860A033D3283FE2 /* MESRecipeCollectionPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionPresenter.h; sourceTree = "<group>"; };
 		E22BA95703C5204375E4FDF3 /* MESRecipeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionViewController.h; sourceTree = "<group>"; };
 		E22BA96AC90C91FF06E60B65 /* MESRecipeCollectionPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionPresenter.m; sourceTree = "<group>"; };
-		E22BA9893EE49ACCFE778748 /* MESRecipeCreationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCreationPresenter.h; sourceTree = "<group>"; };
 		E22BAA14BE782B7953F81AC7 /* MESRecipeCollectionAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionAssembly.m; sourceTree = "<group>"; };
 		E22BAA5A4F1D643E0284261E /* MESRecipeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionViewController.m; sourceTree = "<group>"; };
-		E22BAB329AF837FB6D7FF788 /* MESRecipeCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCreationViewController.m; sourceTree = "<group>"; };
 		E22BAB5418DEDDE7434FC4F4 /* MESRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipe.h; sourceTree = "<group>"; };
 		E22BAD95956060A99FF19C60 /* MESRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipe.m; sourceTree = "<group>"; };
-		E22BAE1640D3409061A64A64 /* MESRecipeCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCreationViewController.h; sourceTree = "<group>"; };
 		F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vanguard-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEC3E42479294A0B29912D7 /* Pods-Vanguard-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanguard-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vanguard-iOSTests/Pods-Vanguard-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,24 +172,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E22BA5C8AD582CB2F542118E /* RecipeCreation */ = {
-			isa = PBXGroup;
-			children = (
-				E22BAB329AF837FB6D7FF788 /* MESRecipeCreationViewController.m */,
-				E22BAE1640D3409061A64A64 /* MESRecipeCreationViewController.h */,
-				E22BA4D243C077E9ACD2D62E /* MESRecipeCreationPresenter.m */,
-				E22BA9893EE49ACCFE778748 /* MESRecipeCreationPresenter.h */,
-			);
-			path = RecipeCreation;
-			sourceTree = "<group>";
-		};
 		E22BAAE48BDF660F91F39CC6 /* RecipeCollection */ = {
 			isa = PBXGroup;
 			children = (
 				E22BA95703C5204375E4FDF3 /* MESRecipeCollectionViewController.h */,
 				E22BAA5A4F1D643E0284261E /* MESRecipeCollectionViewController.m */,
-				E22BA6D3363BA80997D9D8C6 /* MESRecipeCollectionInteractor.h */,
-				E22BA0134E0083DAED696936 /* MESRecipeCollectionInteractor.m */,
+				E22BA6D3363BA80997D9D8C6 /* MESRecipeCollectionViewModel.h */,
+				E22BA0134E0083DAED696936 /* MESRecipeCollectionViewModel.m */,
 				E22BAA14BE782B7953F81AC7 /* MESRecipeCollectionAssembly.m */,
 				E22BA65C7FCAD34D8E2AF4F1 /* MESRecipeCollectionAssembly.h */,
 				E22BA96AC90C91FF06E60B65 /* MESRecipeCollectionPresenter.m */,
@@ -207,7 +190,6 @@
 		E22BAD39C74D5D66D4EED926 /* Assemblies */ = {
 			isa = PBXGroup;
 			children = (
-				E22BA5C8AD582CB2F542118E /* RecipeCreation */,
 				E22BAAE48BDF660F91F39CC6 /* RecipeCollection */,
 			);
 			path = Assemblies;
@@ -383,10 +365,8 @@
 			files = (
 				0B3A91351A44B82E0032C0AE /* AppDelegate.m in Sources */,
 				0B3A91321A44B82E0032C0AE /* main.m in Sources */,
-				E22BAE53713B6200AD86815A /* MESRecipeCreationViewController.m in Sources */,
-				E22BA1DCF0EFAFF91262DA20 /* MESRecipeCreationPresenter.m in Sources */,
 				E22BADFFE1BFF2C8C1C9C697 /* MESRecipeCollectionViewController.m in Sources */,
-				E22BAB17D64FEACE949586F9 /* MESRecipeCollectionInteractor.m in Sources */,
+				E22BAB17D64FEACE949586F9 /* MESRecipeCollectionViewModel.m in Sources */,
 				E22BA9DC74344EDD14E43E43 /* MESRecipe.m in Sources */,
 				E22BA025EB75ECE4ED0AF056 /* MESRecipeCollectionAssembly.m in Sources */,
 				E22BA43BC250316E28C28F54 /* MESRecipeCollectionPresenter.m in Sources */,

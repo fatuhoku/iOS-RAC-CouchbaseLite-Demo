@@ -4,20 +4,18 @@
 //
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
-#import "MESRecipeCreationPresenter.h"
+#import "MESRecipeCollectionViewModel.h"
 #import "MESRecipe.h"
 
 
-@implementation MESRecipeCreationPresenter
+@implementation MESRecipeCollectionViewModel
 
 - (instancetype)init {
     self = [super init];
     if (self) {
-        RAC(self, textToDisplay) = [RACObserve(self, model.text) map:^(NSString *name) {
-            return [NSString stringWithFormat:@"Let's cook %@!", name];
-        }];
+        // RAC Bindings
+        NSAssert(self.outputModel, @"outputModel not available");
     }
-
     return self;
 }
 

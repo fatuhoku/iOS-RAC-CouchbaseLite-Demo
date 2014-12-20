@@ -9,14 +9,14 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MESRecipeCollectionViewController.h"
 #import "MESRecipe.h"
-#import "MESRecipeCollectionInteractor.h"
+#import "MESRecipeCollectionViewModel.h"
 #import "TyphoonAutoInjection.h"
 
 
 @interface MESRecipeCollectionViewController ()
 @property(nonatomic, strong) IBOutlet UITextField *nameTextField;
 
-@property(nonatomic, strong) InjectedClass(MESRecipeCollectionInteractor)interactor;
+@property(nonatomic, strong) InjectedClass(MESRecipeCollectionViewModel)interactor;
 @end
 
 @implementation MESRecipeCollectionViewController
