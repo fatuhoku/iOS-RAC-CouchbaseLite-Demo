@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-// The sole
 @interface MESNameInputViewController : UIViewController
 @end
 
