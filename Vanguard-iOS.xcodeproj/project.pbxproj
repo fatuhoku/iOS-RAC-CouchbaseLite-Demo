@@ -13,7 +13,8 @@
 		0B3A913B1A44B82E0032C0AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A91391A44B82E0032C0AE /* Main.storyboard */; };
 		0B3A913D1A44B82E0032C0AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A913C1A44B82E0032C0AE /* Images.xcassets */; };
 		0B3A91401A44B82E0032C0AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A913E1A44B82E0032C0AE /* LaunchScreen.xib */; };
-		0B3A914C1A44B82E0032C0AE /* VanguardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A914B1A44B82E0032C0AE /* VanguardTests.m */; };
+		0B644C4D1A44CE9400783861 /* SubliminalSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B644C4C1A44CE9400783861 /* SubliminalSpec.m */; };
+		1375A4FDDA464F02FDD44777 /* libPods-Vanguard-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */; };
 		886B116078B455666162E5D6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1834B6DEA2C7A1C2B6140641 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -40,10 +41,13 @@
 		0B3A913F1A44B82E0032C0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0B3A91451A44B82E0032C0AE /* Vanguard-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vanguard-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3A914A1A44B82E0032C0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B3A914B1A44B82E0032C0AE /* VanguardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VanguardTests.m; sourceTree = "<group>"; };
+		0B644C4C1A44CE9400783861 /* SubliminalSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubliminalSpec.m; sourceTree = "<group>"; };
 		1834B6DEA2C7A1C2B6140641 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5D386373F6C48D0AFBE2F1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4D95E20CE33C53257C736DA2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		901AC531AED698A1E1144DF2 /* Pods-Vanguard-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanguard-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vanguard-iOSTests/Pods-Vanguard-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vanguard-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEC3E42479294A0B29912D7 /* Pods-Vanguard-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanguard-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vanguard-iOSTests/Pods-Vanguard-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1375A4FDDA464F02FDD44777 /* libPods-Vanguard-iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +117,7 @@
 		0B3A91481A44B82E0032C0AE /* VanguardTests */ = {
 			isa = PBXGroup;
 			children = (
-				0B3A914B1A44B82E0032C0AE /* VanguardTests.m */,
+				0B644C4C1A44CE9400783861 /* SubliminalSpec.m */,
 				0B3A91491A44B82E0032C0AE /* Supporting Files */,
 			);
 			path = VanguardTests;
@@ -130,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				1834B6DEA2C7A1C2B6140641 /* libPods.a */,
+				F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			children = (
 				4D95E20CE33C53257C736DA2 /* Pods.debug.xcconfig */,
 				2A5D386373F6C48D0AFBE2F1 /* Pods.release.xcconfig */,
+				901AC531AED698A1E1144DF2 /* Pods-Vanguard-iOSTests.debug.xcconfig */,
+				FDEC3E42479294A0B29912D7 /* Pods-Vanguard-iOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -169,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B3A91521A44B82E0032C0AE /* Build configuration list for PBXNativeTarget "Vanguard-iOSTests" */;
 			buildPhases = (
+				5D1EAFC2B5ACB8E7E26A3FB5 /* Check Pods Manifest.lock */,
 				0B3A91411A44B82E0032C0AE /* Sources */,
 				0B3A91421A44B82E0032C0AE /* Frameworks */,
 				0B3A91431A44B82E0032C0AE /* Resources */,
+				6E86580DFC992600995484E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +204,7 @@
 				TargetAttributes = {
 					0B3A912B1A44B82E0032C0AE = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 6DSUZ3L55C;
 					};
 					0B3A91441A44B82E0032C0AE = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -271,6 +282,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5D1EAFC2B5ACB8E7E26A3FB5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E86580DFC992600995484E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vanguard-iOSTests/Pods-Vanguard-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -288,7 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B3A914C1A44B82E0032C0AE /* VanguardTests.m in Sources */,
+				0B644C4D1A44CE9400783861 /* SubliminalSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +446,7 @@
 			baseConfigurationReference = 4D95E20CE33C53257C736DA2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Vanguard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Vanguard-iOS";
@@ -416,6 +458,7 @@
 			baseConfigurationReference = 2A5D386373F6C48D0AFBE2F1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Vanguard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Vanguard-iOS";
@@ -424,6 +467,7 @@
 		};
 		0B3A91531A44B82E0032C0AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901AC531AED698A1E1144DF2 /* Pods-Vanguard-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -437,12 +481,13 @@
 				INFOPLIST_FILE = VanguardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "Vanguard-iOSTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanguard.app/Vanguard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanguard-iOS.app/Vanguard-iOS";
 			};
 			name = Debug;
 		};
 		0B3A91541A44B82E0032C0AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDEC3E42479294A0B29912D7 /* Pods-Vanguard-iOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -452,7 +497,7 @@
 				INFOPLIST_FILE = VanguardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "Vanguard-iOSTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanguard.app/Vanguard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanguard-iOS.app/Vanguard-iOS";
 			};
 			name = Release;
 		};

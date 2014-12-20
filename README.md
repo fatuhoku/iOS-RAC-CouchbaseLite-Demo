@@ -1,68 +1,155 @@
-The purpose of this project is to establish a wholesome iOS development
-approach that is amenable to incremental development.
+Vanguard Project
+===================
 
-It is established on the following core principles:
+An iOS project template for speedy technical learning, and refinement of development process.
 
+It explores the following core principles:
+
+ - Xcode configuration — to support multiple configurations
+ — Modular assemblies — use of frameworks, static libraries, sub-applications to split into sub-project levels
+ - iOS code architectures — explore use of MVVM and VIPER architectures
  - Continuous integration / Continuous deployment
  - Release early, release often
- - Modular code; isolate changes
- - Modular architecture — adopt MVVM and VIPER patterns, and contain logic in their module.
- - ONE target, but multiple schemes.
+ - Simplicity: minimise number of targets (reduce build times); tweak values with Xcode configurations.
+
+XCode Concepts
+================
+
+Project manages a number of bundles (artefacts)
+Targets are sets of compilation files (HARD behaviour differentiation).
+Targets' behaviours can be are sets of compilation files (HARD behaviour differentiation).
+
+Behaviour There's only really one app, so unless there's a pressing neecompile 
+In order to minimize complexity of targets
 
 Targets
-=======
-
- - ONE main target, ONE test target, but MULTIPLE schemes.
+-------
 
 (?) What can the integration tests test realistically?
 
 MULTIPLE configurations. Different configurations let you set pre-processor flags to change the implementation.
 Schemes map to Configurations ONE TO ONE.
 
+Services
+----------
 
-Environments as XCode Configurations
-====================================
+The application might need to talk to a number of services:
 
-In principle, we would like to support four principle environments:
+| Service               | Provider    |
+|-----------------------|-------------|
+| Tweaks                | Tweaks      |
+| General Backend       | Parse       |
+| Data Backend          | Couchbase   |
+| A/B Testing           | Apptimize   |
+| Social Authentication | Facebook    |
+| Crash reporting       | Crashlytics |
+| Bug reporting UI      | Instabug    |
+| Mobile Analytics      | Mixpanel    |
 
-|            | Frontend                                    | Backend    | Notes                                         |
-|------------|---------------------------------------------|------------|-----------------------------------------------|
-| dev        | iOS Simulator /  iDevice (XCode dev device) | ???        | Super-fast iterations                         |
-| ci         | iDevice (greenhouseci.com)                  | ???        | Detect regressions fast                       |
-| stage      | iDevice (Internal Testers)                  | loaf-stage | For quality assurance before pushing to users |
-| prod       | iDevice (External Testers)                  | loaf-prod  |                                               |
 
- - Tests (for the test target) are developed in `dev`, and the same tests are run in CI.
+Environments as Xcode configurations
+------------------------------------
 
-(?) To what degree can the sync-gateway be set up?
+The application bundle built from the target might want to run under a number
+of different contexts and for different purposes, as shown below:
 
-The first two are clones of the Debug configuration whereas the second two are clones of Release.
-We need a number of configurations for purposes.
+| Environment | Preprocessor Macro | Frontend                                    | Backend    | Purpose                                          |
+|-------------|--------------------|---------------------------------------------|------------|--------------------------------------------------|
+| dev         | DEV                | iOS Simulator /  iDevice (XCode dev device) | ???        | Run often to iterate on application              |
+| stage       | STAGE              | iDevice (Internal Testers)                  | loaf-stage | Automatic and manual system test before release  |
+| production  | PROD               | iDevice (External Testers)                  | loaf-prod  | Humans use the app!                              |
+| ci (pending)| CI                 | iDevice (hosted itest service)              | ???        | Run every commit to detect regressions           |
 
-For simplicity, a scheme's corresponds to a configurations
+### ... with Cocoapods
 
- - Vanguard (Fake Data)
-    - PURPOSE: Allows high-speed iterations on user interface.  without fuss
+Services should be enabled / disabled for each of these configurations by using
+Cocoapods' new configuration-scoped dependencies. See [here](http://blog.cocoapods.org/CocoaPods-0.34/).
 
-    — RUN:  Loads application with various fake UI harnesses with a fake database (no sync gateway at all);
-            Storyboard can be set to some particular view controller;
-            Data for ViewController is automatically injected;
-            READ-ONLY. Write operations are not supported.
+### ... in code
 
-    — TEST: use to test the UI only, without depending on ANY database
+1. Change behaviour by enabling / disabling codepaths based on the environment preprocessor macro:
 
- - Vanguard (Local Sync Gateway)
-    — RUN:  UI only, without depending on ANY database
-    - TEST: ...
+```
+#ifdef DEV
+assembly = [MESDevelopmentAssembly ...];
+#endif
 
- - A/B testing integrated in the start
+#ifdef CI
+assembly = [MESIntegrationTestAssembly ...];
+#endif
 
-With Couchbase, we'll be looking for a Model layer that is also responsible for persistence.
+#ifdef STAGE
+assembly = [MESStageAssembly ...];
+#endif
 
-(?) How can a change of scheme specify differences in code compilation?
-(!) See DEBUG preprocessor flag.
+#ifdef PROD
+assembly = [MESProductionAssembly ...];
+#endif
+```
 
-Couchbase Support
------------------
+The way to fetch the Facebook URL scheme suffix was pretty horrible:
 
-Test by skipping all the things
+```
+[[NSBundle mainBundle] infoDictionary][@"FacebookUrlSchemeSuffix"];
+```
+
+Much prefer the code define the scheme suffix in the Assembly.
+
+
+2. Check whether a Cocoapod dependency exists. e.g.
+
+```
+#ifdef COCOAPODS_POD_AVAILABLE_Instabug
+[Instabug doSomething];
+#endif
+```
+
+VIPER architecture
+------------------
+
+| VIPER component present | Interactor | Pre |
+|-------------------------|------------|-----|
+| Read-Only               | NO         | YES |
+| Read-Write              | YES        | YES |
+
+
+Test Strategy
+-------------
+
+Behaviour Driven Testing (BDD) dictates that we should only bother testing for
+units of business value.  At the same time it's important to avoid the ice-cream cone.
+
+We can identify two sorts of tests:
+
+ - [Subcutaneous tests](http://martinfowler.com/bliki/SubcutaneousTest.html)
+   tests manage to test what's just under the View: it tests the Interactor,
+   Presenter, and Entity parts of VIPER.
+ - UI tests, which tests the View and Routing (navigation) parts of VIPER.
+
+We start with one test suite that tests IPE exclusively.
+For every VIPER stack, the Interactor and Presenter pair is the system under test.
+
+| VIPER component present | Interactor | Presenter |
+|-------------------------|------------|-----------|
+| Read-Only               | NO         | YES       |
+| Read-Write              | YES        | YES       |
+
+When structured this way, even integration tests could appear to just waste time.
+
+Test coverage of V and R is much less important. Testing the core and building
+the tests out from there is more important.
+
+
+Dependency Injection
+--------------------
+
+TODOs
+----------
+
+### Integration Testing
+
+ -  Build a simple application that has a TextField, and a button. When tapped, we want to observe a label change to "Hello [name]"
+
+### A/B Testing
+
+ - Apptimize
