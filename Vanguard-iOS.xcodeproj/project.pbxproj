@@ -12,7 +12,7 @@
 		0B3A913B1A44B82E0032C0AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A91391A44B82E0032C0AE /* Main.storyboard */; };
 		0B3A913D1A44B82E0032C0AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A913C1A44B82E0032C0AE /* Images.xcassets */; };
 		0B3A91401A44B82E0032C0AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A913E1A44B82E0032C0AE /* LaunchScreen.xib */; };
-		0B644C4D1A44CE9400783861 /* ViperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B644C4C1A44CE9400783861 /* ViperSpec.m */; };
+		0B644C4D1A44CE9400783861 /* CouchbaseLiteSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B644C4C1A44CE9400783861 /* CouchbaseLiteSpec.m */; };
 		1375A4FDDA464F02FDD44777 /* libPods-Vanguard-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */; };
 		886B116078B455666162E5D6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1834B6DEA2C7A1C2B6140641 /* libPods.a */; };
 		E22BA025EB75ECE4ED0AF056 /* MESRecipeCollectionAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAA14BE782B7953F81AC7 /* MESRecipeCollectionAssembly.m */; };
@@ -44,7 +44,7 @@
 		0B3A913F1A44B82E0032C0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0B3A91451A44B82E0032C0AE /* Vanguard-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vanguard-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3A914A1A44B82E0032C0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B644C4C1A44CE9400783861 /* ViperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViperSpec.m; sourceTree = "<group>"; };
+		0B644C4C1A44CE9400783861 /* CouchbaseLiteSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouchbaseLiteSpec.m; sourceTree = "<group>"; };
 		1834B6DEA2C7A1C2B6140641 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5D386373F6C48D0AFBE2F1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4D95E20CE33C53257C736DA2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		0B3A91481A44B82E0032C0AE /* VanguardTests */ = {
 			isa = PBXGroup;
 			children = (
-				0B644C4C1A44CE9400783861 /* ViperSpec.m */,
+				0B644C4C1A44CE9400783861 /* CouchbaseLiteSpec.m */,
 				0B3A91491A44B82E0032C0AE /* Supporting Files */,
 			);
 			path = VanguardTests;
@@ -383,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B644C4D1A44CE9400783861 /* ViperSpec.m in Sources */,
+				0B644C4D1A44CE9400783861 /* CouchbaseLiteSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
