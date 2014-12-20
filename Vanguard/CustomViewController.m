@@ -1,17 +1,17 @@
 //
-//  ViewController.m
+//  CustomViewController.m
 //  Vanguard
 //
 //  Created by Hok Shun Poon on 19/12/2014.
 //  Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CustomViewController.h"
 
-@interface ViewController ()
+@interface CustomViewController ()
 @end
 
-@implementation ViewController
+@implementation CustomViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

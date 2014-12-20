@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CustomViewController.h
 //  Vanguard
 //
 //  Created by Hok Shun Poon on 19/12/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CustomViewController : UIViewController
 @end
 
