@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class MESName;
+
+// Write-only. Lets the user write a name. This is stored directly into the model.
 @interface MESNameInputViewController : UIViewController
 @end
 

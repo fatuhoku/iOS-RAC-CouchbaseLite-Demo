@@ -4,11 +4,21 @@
 //
 
 #import "MESHelloNameAssembly.h"
-#import "MESNameInputViewController.h"
+#import "MESName.h"
+#import "MESHelloNameInteractor.h"
 
-
-@interface MESHelloNameAssembly ()
-@end
 
 @implementation MESHelloNameAssembly
+
+- (MESHelloNameInteractor *)interactor {
+    return [TyphoonDefinition withClass:[MESHelloNameInteractor class]];
+}
+
+- (MESName *)storyboardModel {
+    return [TyphoonDefinition withClass:[MESName class]
+                          configuration:^(TyphoonDefinition *definition) {
+                              definition.scope = TyphoonScopeWeakSingleton;
+                          }];
+}
+
 @end

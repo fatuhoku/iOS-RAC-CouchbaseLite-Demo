@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// Given a MESName, shows it a slightly differently.
 @interface MESNameOutputViewController : UIViewController
 @end
 

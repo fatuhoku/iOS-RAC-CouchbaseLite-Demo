@@ -6,10 +6,17 @@
 //  Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MESNameInputViewController.h"
+#import "MESName.h"
+#import "MESHelloNameInteractor.h"
+#import "TyphoonAutoInjection.h"
+
 
 @interface MESNameInputViewController ()
-@property(nonatomic, strong) NSString *textToDisplay;
+@property (nonatomic, strong) IBOutlet UITextField *nameTextField;
+
+@property (nonatomic, strong) InjectedClass(MESHelloNameInteractor) interactor;
 @end
 
 @implementation MESNameInputViewController
@@ -17,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    RAC(self, interactor.name) = [self.nameTextField rac_textSignal];
 }
 
 @end

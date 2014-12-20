@@ -44,6 +44,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H6T-12-YGy"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="b9x-M9-clQ" id="n9i-t6-wQ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

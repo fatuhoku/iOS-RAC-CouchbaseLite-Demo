@@ -18,6 +18,7 @@
 		E22BA57EF6ABB6969280B74B /* MESName.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA5A26BE2850ECE27984E /* MESName.m */; };
 		E22BA58BD1514093A79CA3CF /* MESNameInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA9D2975B07D51BF7F0AE /* MESNameInputViewController.m */; };
 		E22BA6593F9B7851A96D983E /* MESHelloNameAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA2298D8D3066354FB529 /* MESHelloNameAssembly.m */; };
+		E22BAD726FFC15D0F5DD1A3D /* MESHelloNameInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAB21AB352E465F986EDE /* MESHelloNameInteractor.m */; };
 		E22BAE53713B6200AD86815A /* MESNameOutputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAB329AF837FB6D7FF788 /* MESNameOutputViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -49,9 +50,11 @@
 		901AC531AED698A1E1144DF2 /* Pods-Vanguard-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanguard-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vanguard-iOSTests/Pods-Vanguard-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E22BA2298D8D3066354FB529 /* MESHelloNameAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESHelloNameAssembly.m; sourceTree = "<group>"; };
 		E22BA352D998CD5BF72B7068 /* MESHelloNameAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESHelloNameAssembly.h; sourceTree = "<group>"; };
+		E22BA3F85C2DD1328480C710 /* MESHelloNameInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESHelloNameInteractor.h; sourceTree = "<group>"; };
 		E22BA5A26BE2850ECE27984E /* MESName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESName.m; sourceTree = "<group>"; };
 		E22BA64072FBBF07E210363A /* MESName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESName.h; sourceTree = "<group>"; };
 		E22BA9D2975B07D51BF7F0AE /* MESNameInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESNameInputViewController.m; sourceTree = "<group>"; };
+		E22BAB21AB352E465F986EDE /* MESHelloNameInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESHelloNameInteractor.m; sourceTree = "<group>"; };
 		E22BAB329AF837FB6D7FF788 /* MESNameOutputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESNameOutputViewController.m; sourceTree = "<group>"; };
 		E22BAD744516AF26F388A030 /* MESNameInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESNameInputViewController.h; sourceTree = "<group>"; };
 		E22BAE1640D3409061A64A64 /* MESNameOutputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESNameOutputViewController.h; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 				E22BAE1640D3409061A64A64 /* MESNameOutputViewController.h */,
 				E22BA5A26BE2850ECE27984E /* MESName.m */,
 				E22BA64072FBBF07E210363A /* MESName.h */,
+				E22BAB21AB352E465F986EDE /* MESHelloNameInteractor.m */,
+				E22BA3F85C2DD1328480C710 /* MESHelloNameInteractor.h */,
 			);
 			path = HelloName;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 				E22BA58BD1514093A79CA3CF /* MESNameInputViewController.m in Sources */,
 				E22BAE53713B6200AD86815A /* MESNameOutputViewController.m in Sources */,
 				E22BA57EF6ABB6969280B74B /* MESName.m in Sources */,
+				E22BAD726FFC15D0F5DD1A3D /* MESHelloNameInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
