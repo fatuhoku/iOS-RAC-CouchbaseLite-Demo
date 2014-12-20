@@ -14,22 +14,12 @@
 
 
 @interface MESRecipeCollectionViewController ()
-@property(nonatomic, strong) IBOutlet UITextField *nameTextField;
-
-@property(nonatomic, strong) InjectedClass(MESRecipeCollectionViewModel)interactor;
 @end
 
 @implementation MESRecipeCollectionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    NSAssert(self.nameTextField, @"textfield is nil");
-    NSAssert(self.interactor, @"Interactor is nil");
-
-    RAC(self, interactor.outputModel.text) = [self.nameTextField rac_textSignal];
-
-    // Delegates
 }
 
 @end
