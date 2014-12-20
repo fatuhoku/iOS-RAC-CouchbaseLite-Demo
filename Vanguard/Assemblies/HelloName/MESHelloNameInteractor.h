@@ -4,11 +4,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TyphoonAutoInjection.h"
 
 @class MESName;
 
 
-// Does nothing with the name.
+// Interactor houses the injected singleton MESName...
 @interface MESHelloNameInteractor : NSObject
-@property(nonatomic, strong) MESName *name;
+@property(nonatomic, strong) InjectedClass(MESName) name;
 @end
