@@ -1,5 +1,5 @@
 //
-//  MESTextLabelViewController.h
+//  MESNameOutputViewController.h
 //  Vanguard
 //
 //  Created by Hok Shun Poon on 19/12/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MESTextLabelViewController : UIViewController
+@interface MESNameOutputViewController : UIViewController
 @end
 

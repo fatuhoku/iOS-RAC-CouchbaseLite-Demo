@@ -24,7 +24,7 @@
 	<true/>
 	<key>TyphoonInitialAssemblies</key>
 	<array>
-		<string>MESAssembly</string>
+		<string>MESHelloNameAssembly</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
