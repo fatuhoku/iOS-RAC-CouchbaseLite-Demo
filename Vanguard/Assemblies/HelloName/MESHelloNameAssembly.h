@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 #import <Typhoon/Typhoon.h>
 
-@class MESName;
+@class MESRecipe;
 
 // This assembly creates a simple unit of value for the user:
 //  - type name into the box

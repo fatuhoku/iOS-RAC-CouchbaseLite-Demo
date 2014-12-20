@@ -4,14 +4,14 @@
 //
 
 #import "MESHelloNameAssembly.h"
-#import "MESName.h"
+#import "MESRecipe.h"
 
 
 @implementation MESHelloNameAssembly
 
 // This is what will carry the name over to the outputViewController.
-- (MESName *)nameModelThatIsEffectivelyPassedBetweenViewControllers {
-    return [TyphoonDefinition withClass:[MESName class]
+- (MESRecipe *)nameModelThatIsEffectivelyPassedBetweenViewControllers {
+    return [TyphoonDefinition withClass:[MESRecipe class]
                           configuration:^(TyphoonDefinition *definition) {
                               definition.scope = TyphoonScopeWeakSingleton;
                           }];

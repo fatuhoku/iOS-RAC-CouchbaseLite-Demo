@@ -3,8 +3,9 @@
 // Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
-#import "MESName.h"
+#import <Foundation/Foundation.h>
 
 
-@implementation MESName
+@interface MESRecipe : NSObject
+@property(nonatomic, copy) NSString *text;
 @end

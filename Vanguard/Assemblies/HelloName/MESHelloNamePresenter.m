@@ -5,17 +5,15 @@
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MESHelloNamePresenter.h"
-#import "MESName.h"
+#import "MESRecipe.h"
 
 
 @implementation MESHelloNamePresenter
-
 
 - (instancetype)init {
     self = [super init];
     if (self) {
         RAC(self, textToDisplay) = [RACObserve(self, model.text) map:^(NSString *name) {
-            NSLog(@"Thinking: %@", name);
             return [NSString stringWithFormat:@"Hello, %@", name];
         }];
     }

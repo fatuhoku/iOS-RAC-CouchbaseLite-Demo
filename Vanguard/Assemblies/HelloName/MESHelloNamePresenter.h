@@ -6,11 +6,11 @@
 #import <Foundation/Foundation.h>
 #import "TyphoonAutoInjection.h"
 
-@class MESName;
+@class MESRecipe;
 
 
 @interface MESHelloNamePresenter : NSObject
 @property (nonatomic, copy, readonly) NSString *textToDisplay;
 
-@property (nonatomic, strong) InjectedClass(MESName) model;
+@property (nonatomic, strong) InjectedClass(MESRecipe) model;
 @end

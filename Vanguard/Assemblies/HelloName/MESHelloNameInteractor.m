@@ -5,7 +5,7 @@
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MESHelloNameInteractor.h"
-#import "MESName.h"
+#import "MESRecipe.h"
 
 
 @implementation MESHelloNameInteractor

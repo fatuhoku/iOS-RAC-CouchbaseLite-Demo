@@ -8,7 +8,7 @@
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MESNameInputViewController.h"
-#import "MESName.h"
+#import "MESRecipe.h"
 #import "MESHelloNameInteractor.h"
 #import "TyphoonAutoInjection.h"
 
