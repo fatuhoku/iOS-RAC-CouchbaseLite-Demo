@@ -7,5 +7,5 @@
 
 
 @interface MESRecipeCollection : NSObject
-@property(nonatomic, copy) NSString *text;
+@property(nonatomic, strong) NSArray *recipes;
 @end

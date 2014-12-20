@@ -8,6 +8,10 @@
 #import "MESRecipeCollection.h"
 
 
+@interface MESRecipeCollectionViewModel ()
+@property(nonatomic, strong) InjectedClass(MESRecipeCollection) recipeCollection;
+@end
+
 @implementation MESRecipeCollectionViewModel
 
 - (instancetype)init {

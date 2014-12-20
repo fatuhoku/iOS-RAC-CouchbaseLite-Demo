@@ -7,9 +7,9 @@
 #import "TyphoonAutoInjection.h"
 
 @class MESRecipeCollection;
-
+@class TLIndexPathDataModel;
 
 // Interactor houses the injected singleton MESRecipeCollection...
 @interface MESRecipeCollectionViewModel : NSObject
-@property(nonatomic, strong) InjectedClass(MESRecipeCollection) outputModel;
+@property(nonatomic, strong) TLIndexPathDataModel *dataModel;
 @end

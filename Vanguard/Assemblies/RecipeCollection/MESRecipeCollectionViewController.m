@@ -8,13 +8,7 @@
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MESRecipeCollectionViewController.h"
-#import "MESRecipeCollection.h"
-#import "MESRecipeCollectionViewModel.h"
-#import "TyphoonAutoInjection.h"
 
-
-@interface MESRecipeCollectionViewController ()
-@end
 
 @implementation MESRecipeCollectionViewController
 

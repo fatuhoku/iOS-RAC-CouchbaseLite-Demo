@@ -1,0 +1,33 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+// Standard iOS Imports
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+
+// TestFlight
+// Workaround: AppCode doesn't print NSLog when TestFlight is in use
+// http://devnet.jetbrains.com/thread/436894
+    #import "TestFlight.h"
+    #if TARGET_IPHONE_SIMULATOR
+    #else
+        #define NSLog(__FORMAT__, ...) TFLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+    #endif
+
+// Pods
+    #import <Functional.m/NSArray+F.h>
+    #import <ReactiveCocoa/ReactiveCocoa.h>
+    #import <CocoaLumberjack/DDLog.h>
+#endif
+
