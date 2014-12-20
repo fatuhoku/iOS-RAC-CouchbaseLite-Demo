@@ -5,6 +5,7 @@
 
 #import "MESRecipeCollectionAssembly.h"
 #import "MESRecipeCollection.h"
+#import "TLIndexPathController.h"
 
 
 @implementation MESRecipeCollectionAssembly
@@ -19,6 +20,12 @@
                         parameters:^(TyphoonMethod *initializer) {
                             [initializer injectParameterWith:[self britishRecipes]];
                         }];
+    }];
+}
+
+- (TLIndexPathController *)freshIndexPathControllerForViewControllerInitalization {
+    return [TyphoonDefinition withClass:[TLIndexPathController class] configuration:^(TyphoonDefinition *definition) {
+        definition.scope = TyphoonScopePrototype;
     }];
 }
 

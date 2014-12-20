@@ -13,7 +13,7 @@
 
 @interface MESRecipeCollectionViewController () <TLIndexPathControllerDelegate>
 @property(nonatomic, strong) InjectedClass(MESRecipeCollectionViewModel) viewModel;
-@property(nonatomic, strong) TLIndexPathController *indexPathController;
+@property(nonatomic, strong) InjectedClass(TLIndexPathController) indexPathController;
 @end
 
 @implementation MESRecipeCollectionViewController
@@ -21,7 +21,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.indexPathController = [TLIndexPathController new];
     self.indexPathController.delegate = self;
 
     NSAssert(self.viewModel, @"viewModel is nil");
