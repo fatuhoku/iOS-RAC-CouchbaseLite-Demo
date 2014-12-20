@@ -3,7 +3,6 @@
 // Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
-#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MESRecipeCollectionViewModel.h"
 #import "MESRecipeCollection.h"
 #import "TLIndexPathDataModel.h"

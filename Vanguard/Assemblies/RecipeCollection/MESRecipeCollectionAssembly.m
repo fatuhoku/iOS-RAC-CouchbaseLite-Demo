@@ -9,24 +9,26 @@
 
 @implementation MESRecipeCollectionAssembly
 
-// (?) Which of these will Typhoon pick?
-
 - (NSArray *)britishRecipes {
+    return @[@"Roast turkey", @"Pie and mash", @"Fish and chips"];
+}
+
+- (MESRecipeCollection *)defaultCollection {
     return [TyphoonDefinition withClass:[MESRecipeCollection class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithRecipes:)
                         parameters:^(TyphoonMethod *initializer) {
-                            [initializer injectParameterWith:@[@"Roast turkey", @"Pie and mash", @"Fish and chips"]];
+                            [initializer injectParameterWith:[self britishRecipes]];
                         }];
     }];
 }
 
-- (NSArray *)japaneseRecipes {
-    return [TyphoonDefinition withClass:[MESRecipeCollection class] configuration:^(TyphoonDefinition *definition) {
-        [definition useInitializer:@selector(initWithRecipes:)
-                        parameters:^(TyphoonMethod *initializer) {
-                            [initializer injectParameterWith:@[@"Salmon nigiri", @"Okononmiyaki", @"Beef udon", @"Chicken Teriyaki"]];
-                        }];
-    }];
-}
+//- (MESRecipeCollection *)japaneseRecipes {
+//    return [TyphoonDefinition withClass:[MESRecipeCollection class] configuration:^(TyphoonDefinition *definition) {
+//        [definition useInitializer:@selector(initWithRecipes:)
+//                        parameters:^(TyphoonMethod *initializer) {
+//                            [initializer injectParameterWith:@[@"Salmon nigiri", @"Okononmiyaki", @"Beef udon", @"Chicken Teriyaki"]];
+//                        }];
+//    }];
+//}
 
 @end
