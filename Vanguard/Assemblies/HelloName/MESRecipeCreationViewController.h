@@ -1,5 +1,5 @@
 //
-//  MESNameOutputViewController.h
+//  MESRecipeCreationViewController.h
 //  Vanguard
 //
 //  Created by Hok Shun Poon on 19/12/2014.
@@ -10,10 +10,10 @@
 #import "TyphoonAutoInjection.h"
 
 @class MESRecipe;
-@class MESHelloNamePresenter;
+@class MESRecipeCreationPresenter;
 
 // Given a MESRecipe, shows it a slightly differently.
-@interface MESNameOutputViewController : UIViewController
-@property(nonatomic, strong) InjectedClass(MESHelloNamePresenter) presenter;
+@interface MESRecipeCreationViewController : UIViewController
+@property(nonatomic, strong) InjectedClass(MESRecipeCreationPresenter) presenter;
 @end
 

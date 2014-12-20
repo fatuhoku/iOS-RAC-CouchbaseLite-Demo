@@ -9,7 +9,7 @@
 @class MESRecipe;
 
 
-@interface MESHelloNamePresenter : NSObject
+@interface MESRecipeCreationPresenter : NSObject
 @property (nonatomic, copy, readonly) NSString *textToDisplay;
 
 @property (nonatomic, strong) InjectedClass(MESRecipe) model;

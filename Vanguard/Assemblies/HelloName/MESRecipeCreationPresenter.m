@@ -4,17 +4,17 @@
 //
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
-#import "MESHelloNamePresenter.h"
+#import "MESRecipeCreationPresenter.h"
 #import "MESRecipe.h"
 
 
-@implementation MESHelloNamePresenter
+@implementation MESRecipeCreationPresenter
 
 - (instancetype)init {
     self = [super init];
     if (self) {
         RAC(self, textToDisplay) = [RACObserve(self, model.text) map:^(NSString *name) {
-            return [NSString stringWithFormat:@"Hello, %@", name];
+            return [NSString stringWithFormat:@"Let's cook %@!", name];
         }];
     }
 

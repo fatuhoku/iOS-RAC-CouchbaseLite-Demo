@@ -1,5 +1,5 @@
 //
-//  MESNameOutputViewController.m
+//  MESRecipeCreationViewController.m
 //  Vanguard
 //
 //  Created by Hok Shun Poon on 19/12/2014.
@@ -7,14 +7,14 @@
 //
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
-#import "MESNameOutputViewController.h"
-#import "MESHelloNamePresenter.h"
+#import "MESRecipeCreationViewController.h"
+#import "MESRecipeCreationPresenter.h"
 
-@interface MESNameOutputViewController ()
+@interface MESRecipeCreationViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @end
 
-@implementation MESNameOutputViewController
+@implementation MESRecipeCreationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

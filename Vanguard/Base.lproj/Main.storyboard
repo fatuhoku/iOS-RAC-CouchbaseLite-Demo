@@ -55,7 +55,7 @@
         <!--Name Output View Controller-->
         <scene sceneID="JzQ-kp-dCq">
             <objects>
-                <viewController id="cLH-kA-fJO" customClass="MESNameOutputViewController" sceneMemberID="viewController">
+                <viewController id="cLH-kA-fJO" customClass="MESRecipeCreationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ih4-P0-Vog"/>
                         <viewControllerLayoutGuide type="bottom" id="4wl-3g-NmO"/>
@@ -64,12 +64,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello &lt;name&gt;!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84G-Wp-boY">
-                                <rect key="frame" x="128" y="227" width="344" height="146"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="344" id="IFk-x5-lAZ"/>
-                                    <constraint firstAttribute="height" constant="146" id="rR4-Vy-2wu"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are cooking &lt;name&gt;!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84G-Wp-boY">
+                                <rect key="frame" x="22" y="270" width="556" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
