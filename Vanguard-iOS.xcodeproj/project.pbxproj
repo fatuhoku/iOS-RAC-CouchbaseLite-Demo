@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		0B3A91321A44B82E0032C0AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A91311A44B82E0032C0AE /* main.m */; };
 		0B3A91351A44B82E0032C0AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A91341A44B82E0032C0AE /* AppDelegate.m */; };
-		0B3A91381A44B82E0032C0AE /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A91371A44B82E0032C0AE /* CustomViewController.m */; };
 		0B3A913B1A44B82E0032C0AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A91391A44B82E0032C0AE /* Main.storyboard */; };
 		0B3A913D1A44B82E0032C0AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A913C1A44B82E0032C0AE /* Images.xcassets */; };
 		0B3A91401A44B82E0032C0AE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3A913E1A44B82E0032C0AE /* LaunchScreen.xib */; };
 		0B644C4D1A44CE9400783861 /* ViperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B644C4C1A44CE9400783861 /* ViperSpec.m */; };
 		1375A4FDDA464F02FDD44777 /* libPods-Vanguard-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */; };
 		886B116078B455666162E5D6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1834B6DEA2C7A1C2B6140641 /* libPods.a */; };
-		E22BA7A6FFF6C4F4B77DCFD2 /* MESAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA52DEAE8BF229D577B36 /* MESAssembly.m */; };
+		E22BA58BD1514093A79CA3CF /* MESTextLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA9D2975B07D51BF7F0AE /* MESTextLabelViewController.m */; };
+		E22BA6593F9B7851A96D983E /* MESAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA2298D8D3066354FB529 /* MESAssembly.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +35,6 @@
 		0B3A91311A44B82E0032C0AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0B3A91331A44B82E0032C0AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0B3A91341A44B82E0032C0AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0B3A91361A44B82E0032C0AE /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
-		0B3A91371A44B82E0032C0AE /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		0B3A913A1A44B82E0032C0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B3A913C1A44B82E0032C0AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B3A913F1A44B82E0032C0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -47,8 +45,10 @@
 		2A5D386373F6C48D0AFBE2F1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4D95E20CE33C53257C736DA2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		901AC531AED698A1E1144DF2 /* Pods-Vanguard-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanguard-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vanguard-iOSTests/Pods-Vanguard-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E22BA2857C37DF75AE47EF4B /* MESAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESAssembly.h; sourceTree = "<group>"; };
-		E22BA52DEAE8BF229D577B36 /* MESAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESAssembly.m; sourceTree = "<group>"; };
+		E22BA2298D8D3066354FB529 /* MESAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESAssembly.m; sourceTree = "<group>"; };
+		E22BA352D998CD5BF72B7068 /* MESAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESAssembly.h; sourceTree = "<group>"; };
+		E22BA9D2975B07D51BF7F0AE /* MESTextLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESTextLabelViewController.m; sourceTree = "<group>"; };
+		E22BAD744516AF26F388A030 /* MESTextLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESTextLabelViewController.h; sourceTree = "<group>"; };
 		F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vanguard-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEC3E42479294A0B29912D7 /* Pods-Vanguard-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanguard-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vanguard-iOSTests/Pods-Vanguard-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,8 +98,6 @@
 			children = (
 				0B3A91331A44B82E0032C0AE /* AppDelegate.h */,
 				0B3A91341A44B82E0032C0AE /* AppDelegate.m */,
-				0B3A91361A44B82E0032C0AE /* CustomViewController.h */,
-				0B3A91371A44B82E0032C0AE /* CustomViewController.m */,
 				0B3A913C1A44B82E0032C0AE /* Images.xcassets */,
 				0B3A913E1A44B82E0032C0AE /* LaunchScreen.xib */,
 				0B3A91391A44B82E0032C0AE /* Main.storyboard */,
@@ -155,11 +153,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E22BA5C8AD582CB2F542118E /* TextLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E22BA2298D8D3066354FB529 /* MESAssembly.m */,
+				E22BA352D998CD5BF72B7068 /* MESAssembly.h */,
+				E22BA9D2975B07D51BF7F0AE /* MESTextLabelViewController.m */,
+				E22BAD744516AF26F388A030 /* MESTextLabelViewController.h */,
+			);
+			path = TextLabel;
+			sourceTree = "<group>";
+		};
 		E22BAD39C74D5D66D4EED926 /* Assemblies */ = {
 			isa = PBXGroup;
 			children = (
-				E22BA2857C37DF75AE47EF4B /* MESAssembly.h */,
-				E22BA52DEAE8BF229D577B36 /* MESAssembly.m */,
+				E22BA5C8AD582CB2F542118E /* TextLabel */,
 			);
 			path = Assemblies;
 			sourceTree = "<group>";
@@ -332,10 +340,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B3A91381A44B82E0032C0AE /* CustomViewController.m in Sources */,
 				0B3A91351A44B82E0032C0AE /* AppDelegate.m in Sources */,
 				0B3A91321A44B82E0032C0AE /* main.m in Sources */,
-				E22BA7A6FFF6C4F4B77DCFD2 /* MESAssembly.m in Sources */,
+				E22BA6593F9B7851A96D983E /* MESAssembly.m in Sources */,
+				E22BA58BD1514093A79CA3CF /* MESTextLabelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

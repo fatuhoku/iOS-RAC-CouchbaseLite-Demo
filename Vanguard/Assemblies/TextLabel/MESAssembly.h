@@ -4,7 +4,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Typhoon/Typhoon.h>
 
+@class CustomViewController;
 
-@interface MESAssembly : NSObject
+@interface MESAssembly : TyphoonAssembly
+- (CustomViewController *)customViewController;
 @end

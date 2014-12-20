@@ -1,5 +1,5 @@
 //
-//  CustomViewController.h
+//  MESTextLabelViewController.h
 //  Vanguard
 //
 //  Created by Hok Shun Poon on 19/12/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomViewController : UIViewController
+@interface MESTextLabelViewController : UIViewController
 @end
 
