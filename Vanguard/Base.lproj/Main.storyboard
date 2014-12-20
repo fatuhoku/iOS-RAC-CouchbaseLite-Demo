@@ -81,6 +81,9 @@
                             <constraint firstAttribute="centerX" secondItem="84G-Wp-boY" secondAttribute="centerX" id="pQq-w8-8Up"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="84G-Wp-boY" id="CBu-w9-BgX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbF-6h-nh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

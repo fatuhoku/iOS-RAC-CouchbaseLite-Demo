@@ -14,9 +14,9 @@
 
 
 @interface MESNameInputViewController ()
-@property (nonatomic, strong) IBOutlet UITextField *nameTextField;
+@property(nonatomic, strong) IBOutlet UITextField *nameTextField;
 
-@property (nonatomic, strong) InjectedClass(MESHelloNameInteractor) interactor;
+@property(nonatomic, strong) InjectedClass(MESHelloNameInteractor)interactor;
 @end
 
 @implementation MESNameInputViewController
@@ -24,7 +24,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    RAC(self, interactor.name) = [self.nameTextField rac_textSignal];
+    NSAssert(self.nameTextField, @"textfield is nil");
+    NSAssert(self.interactor, @"Interactor is nil");
+
+    RAC(self, interactor.outputModel.text) = [self.nameTextField rac_textSignal];
 }
 
 @end

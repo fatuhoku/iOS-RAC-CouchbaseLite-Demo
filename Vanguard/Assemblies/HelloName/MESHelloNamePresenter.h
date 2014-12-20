@@ -9,7 +9,8 @@
 @class MESName;
 
 
-// Interactor houses the injected singleton MESName...
-@interface MESHelloNameInteractor : NSObject
-@property(nonatomic, strong) InjectedClass(MESName) outputModel;
+@interface MESHelloNamePresenter : NSObject
+@property (nonatomic, copy, readonly) NSString *textToDisplay;
+
+@property (nonatomic, strong) InjectedClass(MESName) model;
 @end

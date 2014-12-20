@@ -7,5 +7,5 @@
 
 
 @interface MESName : NSObject
-@property(nonatomic, copy) NSString *name;
+@property(nonatomic, copy) NSString *text;
 @end

@@ -5,16 +5,12 @@
 
 #import "MESHelloNameAssembly.h"
 #import "MESName.h"
-#import "MESHelloNameInteractor.h"
 
 
 @implementation MESHelloNameAssembly
 
-- (MESHelloNameInteractor *)interactor {
-    return [TyphoonDefinition withClass:[MESHelloNameInteractor class]];
-}
-
-- (MESName *)storyboardModel {
+// This is what will carry the name over to the outputViewController.
+- (MESName *)nameModelThatIsEffectivelyPassedBetweenViewControllers {
     return [TyphoonDefinition withClass:[MESName class]
                           configuration:^(TyphoonDefinition *definition) {
                               definition.scope = TyphoonScopeWeakSingleton;
