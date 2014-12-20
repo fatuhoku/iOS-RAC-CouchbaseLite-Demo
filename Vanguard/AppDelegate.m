@@ -6,7 +6,11 @@
 //  Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
+#import <couchbase-lite-ios/CBLQuery.h>
 #import "AppDelegate.h"
+#import "CBLDatabase.h"
+#import "CBLManager.h"
+#import "MESRecipe.h"
 
 @interface AppDelegate ()
 @end
@@ -14,7 +18,26 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // Just GET the database, and run something on it.
+    NSError *error;
+    CBLDatabase *database = [[CBLManager sharedInstance] databaseNamed:@"vanguard" error:&error];
+    NSAssert(database, @"Database is nil");
+
+    CBLQuery *query = [MESRecipe queryInDatabase:database];
+    CBLQueryEnumerator *results = [query run:&error];
+    
+    NSLog(@"Recipes stored already: %u", results.count);
+    
+    if (results.count == 0) {
+        MESRecipe *newRecipe = [[MESRecipe alloc] initWithNewDocumentInDatabase:database];
+        newRecipe.name = @"Demo recipe";
+        [newRecipe save:&error];
+    }
+
+    if (error) {
+        NSLog(@"Error encountered: %@", error);
+    }
+
     return YES;
 }
 

@@ -4,8 +4,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CBLModel.h"
+
+@class CBLQuery;
 
 
-@interface MESRecipe : NSObject
-@property(nonatomic, copy, readonly) NSString *name;
+@interface MESRecipe : CBLModel
+@property(nonatomic, copy) NSString *name;
+
++ (CBLQuery *)queryInDatabase:(CBLDatabase *)database;
 @end
