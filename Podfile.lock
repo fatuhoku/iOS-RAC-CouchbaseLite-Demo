@@ -1,5 +1,22 @@
 PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - couchbase-lite-ios (1.0.3.1)
   - Expecta (0.3.1)
+  - Overline-BlocksKit (0.4.0)
   - ReactiveCocoa (2.4.2):
     - ReactiveCocoa/UI
   - ReactiveCocoa/Core (2.4.2):
@@ -8,11 +25,20 @@ PODS:
   - ReactiveCocoa/UI (2.4.2):
     - ReactiveCocoa/Core
   - Specta (0.3.0.beta1)
+  - TLIndexPathTools (0.3.8)
+  - Typhoon (2.3.2):
+    - Typhoon/no-arc
+  - Typhoon/no-arc (2.3.2)
 
 DEPENDENCIES:
+  - BlocksKit
+  - couchbase-lite-ios
   - Expecta
+  - Overline-BlocksKit
   - ReactiveCocoa
   - Specta (from `https://github.com/specta/specta`, branch `0.3-wip`)
+  - TLIndexPathTools
+  - Typhoon
 
 EXTERNAL SOURCES:
   Specta:
@@ -20,8 +46,13 @@ EXTERNAL SOURCES:
     :git: https://github.com/specta/specta
 
 SPEC CHECKSUMS:
+  BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
+  couchbase-lite-ios: ad77e90f129f0a2af730a8bb2487a3ec995c0578
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
+  Overline-BlocksKit: 8e9c3a42712fb4227392f9d005e7da34938d2152
   ReactiveCocoa: 8418a82b67af2f1b7587baf29c329040a23c2063
   Specta: 31504faaff6c499cf704d97b4dcd2a8a9ef3fe22
+  TLIndexPathTools: 996b4ee569f425f3ab9b9f0c63a072055562e713
+  Typhoon: 9cd60aa73d729abc3478039a544fd7bb00a79f32
 
 COCOAPODS: 0.34.4
