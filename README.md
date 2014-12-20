@@ -56,9 +56,9 @@ of different contexts and for different purposes, as shown below:
 | Environment | Preprocessor Macro | Frontend                                    | Backend    | Purpose                                          |
 |-------------|--------------------|---------------------------------------------|------------|--------------------------------------------------|
 | dev         | DEV                | iOS Simulator /  iDevice (XCode dev device) | ???        | Run often to iterate on application              |
-| ci          | CI                 | iDevice (hosted itest service)              | ???        | Run every commit to detect regressions           |
 | stage       | STAGE              | iDevice (Internal Testers)                  | loaf-stage | Automatic and manual system test before release  |
 | production  | PROD               | iDevice (External Testers)                  | loaf-prod  | Humans use the app!                              |
+| ci (pending)| CI                 | iDevice (hosted itest service)              | ???        | Run every commit to detect regressions           |
 
 ### ... with Cocoapods
 
@@ -104,47 +104,51 @@ Much prefer the code define the scheme suffix in the Assembly.
 #endif
 ```
 
+VIPER architecture
+------------------
+
+| VIPER component present | Interactor | Pre |
+|-------------------------|------------|-----|
+| Read-Only               | NO         | YES |
+| Read-Write              | YES        | YES |
+
 
 Test Strategy
 -------------
 
-To start with, it's a good idea to begin building a VIPER feature by testing the views.
+Behaviour Driven Testing (BDD) dictates that we should only bother testing for
+units of business value.  At the same time it's important to avoid the ice-cream cone.
 
- - Tests (for the test target) are developed in `dev`, and the same tests are run in CI.
+We can identify two sorts of tests:
 
-(?) To what degree can the sync-gateway be set up?
+ - [Subcutaneous tests](http://martinfowler.com/bliki/SubcutaneousTest.html)
+   tests manage to test what's just under the View: it tests the Interactor,
+   Presenter, and Entity parts of VIPER.
+ - UI tests, which tests the View and Routing (navigation) parts of VIPER.
 
-The first two are clones of the Debug configuration whereas the second two are clones of Release.
-We need a number of configurations for purposes.
+We start with one test suite that tests IPE exclusively.
+For every VIPER stack, the Interactor and Presenter pair is the system under test.
 
-For simplicity, a scheme's corresponds to a configurations
+| VIPER component present | Interactor | Presenter |
+|-------------------------|------------|-----------|
+| Read-Only               | NO         | YES       |
+| Read-Write              | YES        | YES       |
 
- - Vanguard (Fake Data)
-    - PURPOSE: Allows high-speed iterations on user interface.  without fuss
+When structured this way, even integration tests could appear to just waste time.
 
-    — RUN:  Loads application with various fake UI harnesses with a fake database (no sync gateway at all);
-            Storyboard can be set to some particular view controller;
-            Data for ViewController is automatically injected;
-            READ-ONLY. Write operations are not supported.
+Test coverage of V and R is much less important. Testing the core and building
+the tests out from there is more important.
 
-    — TEST: use to test the UI only, without depending on ANY database
 
- - Vanguard (Local Sync Gateway)
-    — RUN:  UI only, without depending on ANY database
-    - TEST: ...
-
- - A/B testing integrated in the start
-
-With Couchbase, we'll be looking for a Model layer that is also responsible for persistence.
-
+Dependency Injection
+--------------------
 
 TODOs
 ----------
 
 ### Integration Testing
 
- - Build a simple passing Subliminal test.
-    - Subliminal requires app hooks; declare them very carefully to check the state of something.
+ -  Build a simple application that has a TextField, and a button. When tapped, we want to observe a label change to "Hello [name]"
 
 ### A/B Testing
 
