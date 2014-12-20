@@ -17,7 +17,7 @@
 		886B116078B455666162E5D6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1834B6DEA2C7A1C2B6140641 /* libPods.a */; };
 		E22BA025EB75ECE4ED0AF056 /* MESRecipeCollectionAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAA14BE782B7953F81AC7 /* MESRecipeCollectionAssembly.m */; };
 		E22BA43BC250316E28C28F54 /* MESRecipeCollectionPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA96AC90C91FF06E60B65 /* MESRecipeCollectionPresenter.m */; };
-		E22BA9DC74344EDD14E43E43 /* MESRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAD95956060A99FF19C60 /* MESRecipe.m */; };
+		E22BA9DC74344EDD14E43E43 /* MESRecipeCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAD95956060A99FF19C60 /* MESRecipeCollection.m */; };
 		E22BAB17D64FEACE949586F9 /* MESRecipeCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA0134E0083DAED696936 /* MESRecipeCollectionViewModel.m */; };
 		E22BADFFE1BFF2C8C1C9C697 /* MESRecipeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAA5A4F1D643E0284261E /* MESRecipeCollectionViewController.m */; };
 /* End PBXBuildFile section */
@@ -56,8 +56,8 @@
 		E22BA96AC90C91FF06E60B65 /* MESRecipeCollectionPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionPresenter.m; sourceTree = "<group>"; };
 		E22BAA14BE782B7953F81AC7 /* MESRecipeCollectionAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionAssembly.m; sourceTree = "<group>"; };
 		E22BAA5A4F1D643E0284261E /* MESRecipeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionViewController.m; sourceTree = "<group>"; };
-		E22BAB5418DEDDE7434FC4F4 /* MESRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipe.h; sourceTree = "<group>"; };
-		E22BAD95956060A99FF19C60 /* MESRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipe.m; sourceTree = "<group>"; };
+		E22BAB5418DEDDE7434FC4F4 /* MESRecipeCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollection.h; sourceTree = "<group>"; };
+		E22BAD95956060A99FF19C60 /* MESRecipeCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollection.m; sourceTree = "<group>"; };
 		F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vanguard-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEC3E42479294A0B29912D7 /* Pods-Vanguard-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanguard-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vanguard-iOSTests/Pods-Vanguard-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,8 +166,8 @@
 		E22BA4DC8BD0CD8D5F6294DA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E22BAB5418DEDDE7434FC4F4 /* MESRecipe.h */,
-				E22BAD95956060A99FF19C60 /* MESRecipe.m */,
+				E22BAB5418DEDDE7434FC4F4 /* MESRecipeCollection.h */,
+				E22BAD95956060A99FF19C60 /* MESRecipeCollection.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -367,7 +367,7 @@
 				0B3A91321A44B82E0032C0AE /* main.m in Sources */,
 				E22BADFFE1BFF2C8C1C9C697 /* MESRecipeCollectionViewController.m in Sources */,
 				E22BAB17D64FEACE949586F9 /* MESRecipeCollectionViewModel.m in Sources */,
-				E22BA9DC74344EDD14E43E43 /* MESRecipe.m in Sources */,
+				E22BA9DC74344EDD14E43E43 /* MESRecipeCollection.m in Sources */,
 				E22BA025EB75ECE4ED0AF056 /* MESRecipeCollectionAssembly.m in Sources */,
 				E22BA43BC250316E28C28F54 /* MESRecipeCollectionPresenter.m in Sources */,
 			);

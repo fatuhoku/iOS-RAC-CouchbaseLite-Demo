@@ -6,10 +6,10 @@
 #import <Foundation/Foundation.h>
 #import "TyphoonAutoInjection.h"
 
-@class MESRecipe;
+@class MESRecipeCollection;
 
 
-// Interactor houses the injected singleton MESRecipe...
+// Interactor houses the injected singleton MESRecipeCollection...
 @interface MESRecipeCollectionViewModel : NSObject
-@property(nonatomic, strong) InjectedClass(MESRecipe) outputModel;
+@property(nonatomic, strong) InjectedClass(MESRecipeCollection) outputModel;
 @end

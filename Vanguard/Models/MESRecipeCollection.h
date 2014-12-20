@@ -4,9 +4,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Typhoon/Typhoon.h>
 
-@class MESRecipeCollection;
 
-@interface MESRecipeCollectionAssembly : TyphoonAssembly
+@interface MESRecipeCollection : NSObject
+@property(nonatomic, copy) NSString *text;
 @end

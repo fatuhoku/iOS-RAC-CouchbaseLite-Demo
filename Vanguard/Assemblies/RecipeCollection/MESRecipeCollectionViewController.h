@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class MESRecipe;
+@class MESRecipeCollection;
 
 // Write-only. Lets the user write a name. This is stored directly into the model.
 @interface MESRecipeCollectionViewController : UIViewController

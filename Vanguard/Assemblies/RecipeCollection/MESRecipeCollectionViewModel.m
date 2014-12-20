@@ -5,7 +5,7 @@
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "MESRecipeCollectionViewModel.h"
-#import "MESRecipe.h"
+#import "MESRecipeCollection.h"
 
 
 @implementation MESRecipeCollectionViewModel
