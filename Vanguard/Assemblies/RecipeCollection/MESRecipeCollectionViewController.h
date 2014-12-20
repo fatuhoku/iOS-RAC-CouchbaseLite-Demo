@@ -1,5 +1,5 @@
 //
-//  MESNameInputViewController.h
+//  MESRecipeCollectionViewController.h
 //  Vanguard
 //
 //  Created by Hok Shun Poon on 19/12/2014.
@@ -11,6 +11,6 @@
 @class MESRecipe;
 
 // Write-only. Lets the user write a name. This is stored directly into the model.
-@interface MESNameInputViewController : UIViewController
+@interface MESRecipeCollectionViewController : UIViewController
 @end
 

@@ -3,11 +3,11 @@
 // Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
-#import "MESHelloNameAssembly.h"
+#import "MESRecipeCollectionAssembly.h"
 #import "MESRecipe.h"
 
 
-@implementation MESHelloNameAssembly
+@implementation MESRecipeCollectionAssembly
 
 // This is what will carry the name over to the outputViewController.
 - (MESRecipe *)nameModelThatIsEffectivelyPassedBetweenViewControllers {

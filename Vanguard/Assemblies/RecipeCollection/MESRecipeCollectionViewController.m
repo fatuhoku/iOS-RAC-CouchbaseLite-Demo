@@ -1,5 +1,5 @@
 //
-//  MESNameInputViewController.m
+//  MESRecipeCollectionViewController.m
 //  Vanguard
 //
 //  Created by Hok Shun Poon on 19/12/2014.
@@ -7,19 +7,19 @@
 //
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
-#import "MESNameInputViewController.h"
+#import "MESRecipeCollectionViewController.h"
 #import "MESRecipe.h"
-#import "MESHelloNameInteractor.h"
+#import "MESRecipeCollectionInteractor.h"
 #import "TyphoonAutoInjection.h"
 
 
-@interface MESNameInputViewController ()
+@interface MESRecipeCollectionViewController ()
 @property(nonatomic, strong) IBOutlet UITextField *nameTextField;
 
-@property(nonatomic, strong) InjectedClass(MESHelloNameInteractor)interactor;
+@property(nonatomic, strong) InjectedClass(MESRecipeCollectionInteractor)interactor;
 @end
 
-@implementation MESNameInputViewController
+@implementation MESRecipeCollectionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,6 +28,8 @@
     NSAssert(self.interactor, @"Interactor is nil");
 
     RAC(self, interactor.outputModel.text) = [self.nameTextField rac_textSignal];
+
+    // Delegates
 }
 
 @end

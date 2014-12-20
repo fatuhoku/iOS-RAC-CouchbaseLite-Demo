@@ -10,6 +10,6 @@
 
 
 // Interactor houses the injected singleton MESRecipe...
-@interface MESHelloNameInteractor : NSObject
+@interface MESRecipeCollectionInteractor : NSObject
 @property(nonatomic, strong) InjectedClass(MESRecipe) outputModel;
 @end
