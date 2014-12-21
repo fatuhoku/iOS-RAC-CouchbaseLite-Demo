@@ -16,7 +16,7 @@
     return @"MESRecipe";
 }
 
-+ (CBLQuery *)queryInDatabase:(CBLDatabase *)database {
++ (CBLQuery *)allRecipesQueryWithDatabase:(CBLDatabase *)database {
     NSString *allRecipesViewName = @"MESRecipe.all";
 
     CBLView *view = [database viewNamed:allRecipesViewName];

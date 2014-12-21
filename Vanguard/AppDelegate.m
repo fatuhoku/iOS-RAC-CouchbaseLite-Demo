@@ -33,7 +33,7 @@
 
     NSLog(@"Database has %u documents in it...", allResults.count);
 
-    CBLQuery *query = [MESRecipe queryInDatabase:database];
+    CBLQuery *query = [MESRecipe allRecipesQueryWithDatabase:database];
     CBLQueryEnumerator *results = [query run:&error];
     [MESUtils assertNoError:error];
 

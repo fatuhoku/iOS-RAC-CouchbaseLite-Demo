@@ -14,5 +14,6 @@
 
 + (NSString *)docType;
 
-+ (CBLQuery *)queryInDatabase:(CBLDatabase *)database;
+// List specific views here; these are exactly the views the application needs to maintain.
++ (CBLQuery *)allRecipesQueryWithDatabase:(CBLDatabase *)database;
 @end
