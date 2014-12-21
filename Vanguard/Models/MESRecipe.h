@@ -10,7 +10,9 @@
 
 
 @interface MESRecipe : CBLModel
-@property(nonatomic, copy) NSString *name;
+@property(nonatomic, copy) NSString *title;
+
++ (NSString *)docType;
 
 + (CBLQuery *)queryInDatabase:(CBLDatabase *)database;
 @end

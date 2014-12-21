@@ -10,7 +10,7 @@
 
 @implementation MESRecipe
 
-@dynamic name;
+@dynamic title;
 
 + (NSString *)docType {
     return @"MESRecipe";
@@ -24,8 +24,11 @@
     if (!view.mapBlock) {
         // Register the map function, the first time we access the view:
         [view setMapBlock:MAPBLOCK({
-            if ([doc[@"type"] isEqualToString:[self docType]])
+            NSLog(@"Evaluating MAPBLOCK");
+            if ([doc[@"type"] isEqualToString:[self docType]]) {
+                NSLog(@"INSIDE block. emitting %@", doc[@"title"]);
                 emit(doc[@"title"], nil);
+            }
         })    reduceBlock:nil version:@"1"]; // bump version any time you change the MAPBLOCK body!
     }
 
