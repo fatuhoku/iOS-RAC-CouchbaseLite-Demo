@@ -17,6 +17,9 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+
+        // TODO Reactively load objects from the Couchbase database.
+
         // RAC Bindings
         RAC(self, dataModel) = [RACObserve(self, recipeCollection) map:^(MESRecipeCollection *collection) {
             return [[TLIndexPathDataModel alloc] initWithItems:collection.recipes];
