@@ -7,5 +7,4 @@
 
 
 @implementation MESRecipeCollectionViewInteractor
-
 @end
