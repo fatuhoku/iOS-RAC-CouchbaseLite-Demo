@@ -11,6 +11,7 @@
 #import "CBLDatabase.h"
 #import "CBLManager.h"
 #import "MESRecipe.h"
+#import "MESUtils.h"
 
 @interface AppDelegate ()
 @end
@@ -21,17 +22,33 @@
     // Just GET the database, and run something on it.
     NSError *error;
     CBLDatabase *database = [[CBLManager sharedInstance] databaseNamed:@"vanguard" error:&error];
+    [MESUtils assertNoError:error];
+
     NSAssert(database, @"Database is nil");
+
+    // Query for all documents...
+    CBLQuery *allQuery = [database createAllDocumentsQuery];
+    CBLQueryEnumerator *allResults = [allQuery run:&error];
+    [MESUtils assertNoError:error];
+
+    NSLog(@"Database has %u documents in it...", allResults.count);
 
     CBLQuery *query = [MESRecipe queryInDatabase:database];
     CBLQueryEnumerator *results = [query run:&error];
-    
-    NSLog(@"Recipes stored already: %u", results.count);
+    [MESUtils assertNoError:error];
+
+    NSLog(@"of which %u are recipes", results.count);
     
     if (results.count == 0) {
+        NSLog(@"Creating a recipe and saving it...");
+
         MESRecipe *newRecipe = [[MESRecipe alloc] initWithNewDocumentInDatabase:database];
-        newRecipe.name = @"Demo recipe";
+        newRecipe.type = [MESRecipe docType];
+        newRecipe.title = @"Demo recipe";
         [newRecipe save:&error];
+        [MESUtils assertNoError:error];
+    } else {
+        NSLog(@"There are some recipes... %@", results);
     }
 
     if (error) {
