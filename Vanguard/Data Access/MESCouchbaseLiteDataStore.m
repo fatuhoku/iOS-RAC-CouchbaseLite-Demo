@@ -21,6 +21,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        // TODO Have the Couchbase database injected...
         NSError *error;
         self.database = [[CBLManager sharedInstance] databaseNamed:@"vanguard" error:&error];
         [MESUtils assertNoError:error];
