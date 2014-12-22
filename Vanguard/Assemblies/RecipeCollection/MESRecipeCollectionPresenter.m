@@ -7,7 +7,6 @@
 #import <TLIndexPathTools/TLIndexPathDataModel.h>
 #import "MESRecipeCollectionPresenter.h"
 #import "MESRecipeCollectionInteractor.h"
-#import "MESDataStore.h"
 
 @interface MESRecipeCollectionPresenter ()
 @property(nonatomic, strong) InjectedClass(MESRecipeCollectionInteractor) interactor;
@@ -17,7 +16,6 @@
 
 - (void)typhoonDidInject {
     RAC(self, recipesDataModel) = [RACObserve(self, interactor.recipeEntities) map:^TLIndexPathDataModel *(NSArray *recipeEntities) {
-        NSLog(@"entities: %@", recipeEntities);
         return [[TLIndexPathDataModel alloc] initWithItems:recipeEntities];
     }];
 }
