@@ -29,6 +29,12 @@
     RAC(self, indexPathController.dataModel) = RACObserve(self, presenter.recipesDataModel);
 }
 
+#pragma mark - Action
+
+- (IBAction)didTouchUpInsideCreateNewRecipeButton:(id)sender {
+    
+}
+
 #pragma mark - Table View Delegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

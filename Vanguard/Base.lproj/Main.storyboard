@@ -54,7 +54,7 @@
                     <navigationItem key="navigationItem" id="rrw-d9-90K">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="IYz-pI-w9v">
                             <connections>
-                                <action selector="didTouchUpInsideAddButton:" destination="gMw-M9-AJS" id="hXh-Hh-HSN"/>
+                                <action selector="didTouchUpInsideCreateNewRecipeButton:" destination="gMw-M9-AJS" id="upk-Mt-lDp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
