@@ -32,7 +32,7 @@
 #pragma mark - Action
 
 - (IBAction)didTouchUpInsideCreateNewRecipeButton:(id)sender {
-    
+    [self.presenter createNewRecipe];
 }
 
 #pragma mark - Table View Delegate

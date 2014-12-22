@@ -9,4 +9,6 @@
 @interface MESRecipeCollectionInteractor : NSObject
 // Array of id <MESRecipeEntity>
 @property(nonatomic, copy) NSArray *recipeEntities;
+
+- (void)createNewRecipe;
 @end

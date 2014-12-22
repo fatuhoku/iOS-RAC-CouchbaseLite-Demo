@@ -13,3 +13,7 @@
 @interface MESRecipeCollectionPresenter : NSObject
 @property (nonatomic, strong) TLIndexPathDataModel *recipesDataModel;
 @end
+
+@interface MESRecipeCollectionPresenter (Commands)
+- (void)createNewRecipe;
+@end

@@ -15,9 +15,15 @@
 
 - (void)typhoonDidInject {
     NSLog(@"The datastore I got: %@", self.dataStore);
+    // Need to basically transform the enumerator...
     RAC(self, recipeEntities) = [[self.dataStore allRecipes] doNext:^(id thing){
         NSLog(@"RECIPES RETRIEVED: %@", thing);
     }];
+}
+
+- (void)createNewRecipe {
+    NSDate *now = [NSDate date];
+    [self.dataStore createNewRecipeWithTitle:[NSString stringWithFormat:@"Recipe - %@", now]];
 }
 
 @end

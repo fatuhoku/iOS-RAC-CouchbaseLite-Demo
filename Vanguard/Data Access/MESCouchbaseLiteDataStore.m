@@ -9,6 +9,7 @@
 #import "MESCouchbaseLiteDataStore.h"
 #import "MESUtils.h"
 #import "CBLLiveQuery+ReactiveCouchbaseLite.h"
+#import "MESRecipe.h"
 
 
 @interface MESCouchbaseLiteDataStore ()
@@ -30,6 +31,17 @@
 - (RACSignal *)allRecipes {
     CBLQuery *allRecipesQuery = [self.database createAllDocumentsQuery];
     return [allRecipesQuery.asLiveQuery rcl_rows];
+}
+
+- (id <MESRecipeEntity>)createNewRecipeWithTitle:(NSString *)title {
+    MESRecipe *newRecipe = [[MESRecipe alloc] initWithNewDocumentInDatabase:self.database];
+    newRecipe.type = [MESRecipe docType];
+    newRecipe.title = title;
+
+    NSError *error;
+    [newRecipe save:&error];
+    [MESUtils assertNoError:error];
+    return newRecipe;
 }
 
 @end
