@@ -9,7 +9,7 @@
 @class MESRecipeCollection;
 @class TLIndexPathDataModel;
 
-// Interactor houses the injected singleton MESRecipeCollection...
-@interface MESRecipeCollectionViewModel : NSObject
+// Presenter houses the injected singleton MESRecipeCollection...
+@interface MESRecipeCollectionPresenter : NSObject
 @property(nonatomic, strong) TLIndexPathDataModel *dataModel;
 @end

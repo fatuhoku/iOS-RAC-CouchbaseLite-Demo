@@ -3,16 +3,16 @@
 // Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
-#import "MESRecipeCollectionViewModel.h"
+#import "MESRecipeCollectionPresenter.h"
 #import "MESRecipeCollection.h"
 #import "TLIndexPathDataModel.h"
 
 
-@interface MESRecipeCollectionViewModel ()
+@interface MESRecipeCollectionPresenter ()
 @property(nonatomic, strong) InjectedClass(MESRecipeCollection) recipeCollection;
 @end
 
-@implementation MESRecipeCollectionViewModel
+@implementation MESRecipeCollectionPresenter
 
 - (instancetype)init {
     self = [super init];

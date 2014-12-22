@@ -8,11 +8,11 @@
 
 #import <Typhoon/TyphoonAutoInjection.h>
 #import "MESRecipeCollectionViewController.h"
-#import "MESRecipeCollectionViewModel.h"
+#import "MESRecipeCollectionPresenter.h"
 
 
 @interface MESRecipeCollectionViewController () <TLIndexPathControllerDelegate>
-@property(nonatomic, strong) InjectedClass(MESRecipeCollectionViewModel) viewModel;
+@property(nonatomic, strong) InjectedClass(MESRecipeCollectionPresenter) viewModel;
 @property(nonatomic, strong) InjectedClass(TLIndexPathController) indexPathController;
 @end
 

@@ -21,7 +21,7 @@
 		E22BA7BB6F86BCAD72A4F6AC /* MESRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAA20F6B703A7A347A9E2 /* MESRecipe.m */; };
 		E22BA938D9162646B897E187 /* MESRecipeCollectionViewInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA2BB5A999923EA103137 /* MESRecipeCollectionViewInteractor.m */; };
 		E22BA9DC74344EDD14E43E43 /* MESRecipeCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAD95956060A99FF19C60 /* MESRecipeCollection.m */; };
-		E22BAB17D64FEACE949586F9 /* MESRecipeCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA0134E0083DAED696936 /* MESRecipeCollectionViewModel.m */; };
+		E22BAB17D64FEACE949586F9 /* MESRecipeCollectionPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA0134E0083DAED696936 /* MESRecipeCollectionPresenter.m */; };
 		E22BADFFE1BFF2C8C1C9C697 /* MESRecipeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAA5A4F1D643E0284261E /* MESRecipeCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -51,12 +51,12 @@
 		2A5D386373F6C48D0AFBE2F1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4D95E20CE33C53257C736DA2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		901AC531AED698A1E1144DF2 /* Pods-Vanguard-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanguard-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vanguard-iOSTests/Pods-Vanguard-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E22BA0134E0083DAED696936 /* MESRecipeCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionViewModel.m; sourceTree = "<group>"; };
+		E22BA0134E0083DAED696936 /* MESRecipeCollectionPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionPresenter.m; sourceTree = "<group>"; };
 		E22BA01B42BAF406B013A66E /* MESRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipe.h; sourceTree = "<group>"; };
 		E22BA2BB5A999923EA103137 /* MESRecipeCollectionViewInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionViewInteractor.m; sourceTree = "<group>"; };
 		E22BA65C7FCAD34D8E2AF4F1 /* MESRecipeCollectionAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionAssembly.h; sourceTree = "<group>"; };
 		E22BA6692386FE75B10DBF3F /* MESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESUtils.m; sourceTree = "<group>"; };
-		E22BA6D3363BA80997D9D8C6 /* MESRecipeCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionViewModel.h; sourceTree = "<group>"; };
+		E22BA6D3363BA80997D9D8C6 /* MESRecipeCollectionPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionPresenter.h; sourceTree = "<group>"; };
 		E22BA75EAA188750348311E7 /* MESSharedAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESSharedAssembly.h; sourceTree = "<group>"; };
 		E22BA8C68B03C5E12AC8E9EF /* MESSharedAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESSharedAssembly.m; sourceTree = "<group>"; };
 		E22BA95703C5204375E4FDF3 /* MESRecipeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionViewController.h; sourceTree = "<group>"; };
@@ -190,8 +190,8 @@
 			children = (
 				E22BA95703C5204375E4FDF3 /* MESRecipeCollectionViewController.h */,
 				E22BAA5A4F1D643E0284261E /* MESRecipeCollectionViewController.m */,
-				E22BA6D3363BA80997D9D8C6 /* MESRecipeCollectionViewModel.h */,
-				E22BA0134E0083DAED696936 /* MESRecipeCollectionViewModel.m */,
+				E22BA6D3363BA80997D9D8C6 /* MESRecipeCollectionPresenter.h */,
+				E22BA0134E0083DAED696936 /* MESRecipeCollectionPresenter.m */,
 				E22BAA14BE782B7953F81AC7 /* MESRecipeCollectionAssembly.m */,
 				E22BA65C7FCAD34D8E2AF4F1 /* MESRecipeCollectionAssembly.h */,
 				E22BA2BB5A999923EA103137 /* MESRecipeCollectionViewInteractor.m */,
@@ -381,7 +381,7 @@
 				0B3A91351A44B82E0032C0AE /* AppDelegate.m in Sources */,
 				0B3A91321A44B82E0032C0AE /* main.m in Sources */,
 				E22BADFFE1BFF2C8C1C9C697 /* MESRecipeCollectionViewController.m in Sources */,
-				E22BAB17D64FEACE949586F9 /* MESRecipeCollectionViewModel.m in Sources */,
+				E22BAB17D64FEACE949586F9 /* MESRecipeCollectionPresenter.m in Sources */,
 				E22BA9DC74344EDD14E43E43 /* MESRecipeCollection.m in Sources */,
 				E22BA025EB75ECE4ED0AF056 /* MESRecipeCollectionAssembly.m in Sources */,
 				E22BA7BB6F86BCAD72A4F6AC /* MESRecipe.m in Sources */,
