@@ -30,7 +30,17 @@
 
 - (RACSignal *)allRecipes {
     CBLQuery *allRecipesQuery = [self.database createAllDocumentsQuery];
-    return [allRecipesQuery.asLiveQuery rcl_rows];
+
+    return [[allRecipesQuery.asLiveQuery rcl_rows] map:^id(CBLQueryEnumerator *enumerator) {
+        NSArray *array = [enumerator.rac_sequence map:^id(CBLQueryRow *row) {
+            id <CBLDocumentModel> model = [row.document modelObject];
+            if (!model) {
+                model = [[MESRecipe alloc] initWithDocument:row.document];
+            }
+            return model;
+        }].array;
+        return array;
+    }];
 }
 
 - (id <MESRecipeEntity>)createNewRecipeWithTitle:(NSString *)title {
