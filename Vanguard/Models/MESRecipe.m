@@ -35,4 +35,8 @@
     return [view createQuery];
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"MESRecipe(title:%@)", self.title];
+}
+
 @end
