@@ -1,31 +1,11 @@
 //
-// Created by Hok Shun Poon on 20/12/14.
+// Created by Hok Shun Poon on 22/12/14.
 // Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
+#import <TLIndexPathTools/TLIndexPathDataModel.h>
 #import "MESRecipeCollectionPresenter.h"
-#import "MESRecipeCollection.h"
-#import "TLIndexPathDataModel.h"
 
-
-@interface MESRecipeCollectionPresenter ()
-@property(nonatomic, strong) InjectedClass(MESRecipeCollection) recipeCollection;
-@end
 
 @implementation MESRecipeCollectionPresenter
-
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-
-        // TODO Reactively load objects from the Couchbase database.
-
-        // RAC Bindings
-        RAC(self, dataModel) = [RACObserve(self, recipeCollection) map:^(MESRecipeCollection *collection) {
-            return [[TLIndexPathDataModel alloc] initWithItems:collection.recipes];
-        }];
-    }
-    return self;
-}
-
 @end

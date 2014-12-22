@@ -4,7 +4,8 @@
 //
 
 #import "MESRecipeCollectionAssembly.h"
-#import "MESRecipeCollection.h"
+#import "MESDataStore.h"
+#import "MESCouchbaseLiteDataStore.h"
 
 
 @implementation MESRecipeCollectionAssembly
@@ -13,13 +14,8 @@
     return @[@"Roast turkey", @"Pie and mash", @"Fish and chips"];
 }
 
-- (MESRecipeCollection *)defaultCollection {
-    return [TyphoonDefinition withClass:[MESRecipeCollection class] configuration:^(TyphoonDefinition *definition) {
-        [definition useInitializer:@selector(initWithRecipes:)
-                        parameters:^(TyphoonMethod *initializer) {
-                            [initializer injectParameterWith:[self britishRecipes]];
-                        }];
-    }];
+- (id <MESDataStore>)defaultDatastore {
+    return [TyphoonDefinition withClass:[MESCouchbaseLiteDataStore class]];
 }
 
 //- (MESRecipeCollection *)japaneseRecipes {

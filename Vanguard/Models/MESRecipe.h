@@ -5,11 +5,12 @@
 
 #import <Foundation/Foundation.h>
 #import "CBLModel.h"
+#import "MESRecipeEntity.h"
 
 @class CBLQuery;
 
 
-@interface MESRecipe : CBLModel
+@interface MESRecipe : CBLModel <MESRecipeEntity>
 @property(nonatomic, copy) NSString *title;
 
 + (NSString *)docType;

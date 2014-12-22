@@ -6,7 +6,5 @@
 #import <Foundation/Foundation.h>
 #import <Typhoon/Typhoon.h>
 
-@class MESRecipeCollection;
-
 @interface MESRecipeCollectionAssembly : TyphoonAssembly
 @end

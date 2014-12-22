@@ -12,7 +12,7 @@
 
 
 @interface MESRecipeCollectionViewController () <TLIndexPathControllerDelegate>
-@property(nonatomic, strong) InjectedClass(MESRecipeCollectionPresenter) viewModel;
+@property(nonatomic, strong) InjectedClass(MESRecipeCollectionPresenter)presenter;
 @property(nonatomic, strong) InjectedClass(TLIndexPathController) indexPathController;
 @end
 
@@ -23,9 +23,10 @@
 
     self.indexPathController.delegate = self;
 
-    NSAssert(self.viewModel, @"viewModel is nil");
+    NSAssert(self.presenter, @"presenter is nil");
 
-    RAC(self, indexPathController.dataModel) = RACObserve(self, viewModel.dataModel);
+    // Can always ask the Presenter for individual view models.
+    RAC(self, indexPathController.dataModel) = RACObserve(self, presenter.recipesDataModel);
 }
 
 #pragma mark - Table View Delegate

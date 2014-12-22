@@ -6,9 +6,23 @@
 #import "TLIndexPathController.h"
 #import "MESRecipeCollectionAssembly.h"
 #import "MESSharedAssembly.h"
+#import "MESRecipeCellViewModel.h"
+#import "MESRecipeEntity.h"
 
 
 @implementation MESSharedAssembly
+
+#pragma mark - Cell View Models
+
+- (MESRecipeCellViewModel *)recipeCellModelForRecipe:(id <MESRecipeEntity>)recipe {
+    return [TyphoonDefinition withClass:[MESRecipeCellViewModel class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(initWithRecipe:) parameters:^(TyphoonMethod *initializer) {
+            [initializer injectParameterWith:recipe];
+        }];
+    }];
+}
+
+#pragma mark - TLIndexPathTools
 
 - (TLIndexPathController *)freshIndexPathControllerForViewControllerInitalization {
     return [TyphoonDefinition withClass:[TLIndexPathController class] configuration:^(TyphoonDefinition *definition) {
