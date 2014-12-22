@@ -6,5 +6,6 @@
 #import <Foundation/Foundation.h>
 
 @protocol MESDataStore <NSObject>
-@property(nonatomic, strong) RACSignal *allRecipes;
+@required
+- (RACSignal *)allRecipes;
 @end

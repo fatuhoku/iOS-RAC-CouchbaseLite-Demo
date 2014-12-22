@@ -6,6 +6,8 @@
 #import <Foundation/Foundation.h>
 #import "MESDataStore.h"
 
+@class CBLDatabase;
+
 
 @interface MESCouchbaseLiteDataStore : NSObject <MESDataStore>
 @end
