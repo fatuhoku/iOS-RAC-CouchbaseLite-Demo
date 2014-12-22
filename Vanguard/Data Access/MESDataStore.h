@@ -5,7 +5,12 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol MESRecipeEntity;
+
 @protocol MESDataStore <NSObject>
-@required
+// Nexts' NSArray of id <MESRecipeEntity>, updated live from live query
 - (RACSignal *)allRecipes;
+
+// Creates a recipe.
+- (id <MESRecipeEntity>)createNewRecipeWithTitle:(NSString *)title;
 @end
