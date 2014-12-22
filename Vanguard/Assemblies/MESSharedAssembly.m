@@ -14,7 +14,7 @@
 
 #pragma mark - Cell View Models
 
-- (MESRecipeCellViewModel *)recipeCellModelForRecipe:(id <MESRecipeEntity>)recipe {
+- (MESRecipeCellViewModel *)recipeCollectionCellViewModelForRecipe:(id <MESRecipeEntity>)recipe {
     return [TyphoonDefinition withClass:[MESRecipeCellViewModel class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithRecipe:) parameters:^(TyphoonMethod *initializer) {
             [initializer injectParameterWith:recipe];

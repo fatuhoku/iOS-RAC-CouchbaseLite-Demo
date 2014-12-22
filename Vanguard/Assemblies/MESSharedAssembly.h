@@ -6,6 +6,10 @@
 #import <Foundation/Foundation.h>
 #import <Typhoon/TyphoonAssembly.h>
 
+@class MESRecipeCellViewModel;
+@protocol MESRecipeEntity;
+
 
 @interface MESSharedAssembly : TyphoonAssembly
+- (MESRecipeCellViewModel *)recipeCollectionCellViewModelForRecipe:(id <MESRecipeEntity>)recipe;
 @end
