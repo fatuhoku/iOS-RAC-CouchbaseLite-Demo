@@ -9,11 +9,14 @@
 #import <Typhoon/TyphoonAutoInjection.h>
 #import "MESRecipeCollectionViewController.h"
 #import "MESRecipeCollectionPresenter.h"
+#import "MESSharedAssembly.h"
+#import "MESRecipeCellViewModel.h"
 
 
 @interface MESRecipeCollectionViewController () <TLIndexPathControllerDelegate>
+@property(nonatomic, strong) InjectedClass(MESSharedAssembly)assembly;
 @property(nonatomic, strong) InjectedClass(MESRecipeCollectionPresenter)presenter;
-@property(nonatomic, strong) InjectedClass(TLIndexPathController) indexPathController;
+@property(nonatomic, strong) InjectedClass(TLIndexPathController)indexPathController;
 @end
 
 @implementation MESRecipeCollectionViewController
@@ -42,16 +45,17 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ruid_recipeCollectionViewCell" forIndexPath:indexPath];
+    id cell = [tableView dequeueReusableCellWithIdentifier:@"ruid_recipeCollectionViewCell" forIndexPath:indexPath];
 
-    NSString *recipeName = [self.indexPathController.dataModel itemAtIndexPath:indexPath];
-    [self configureCell:cell withModel:recipeName];
+    id recipe = [self.indexPathController.dataModel itemAtIndexPath:indexPath];
+    [self configureCell:cell withModel:recipe];
 
     return cell;
 }
 
-- (void)configureCell:(UITableViewCell *)cell withModel:(NSString *)recipeName {
-    cell.textLabel.text = recipeName;
+- (void)configureCell:(UITableViewCell *)cell withModel:(id)recipe {
+    MESRecipeCellViewModel *viewModel = [self.assembly recipeCollectionCellViewModelForRecipe:recipe];
+    cell.textLabel.text = viewModel.title;
 }
 
 - (void)controller:(TLIndexPathController *)controller didUpdateDataModel:(TLIndexPathUpdates *)updates {
