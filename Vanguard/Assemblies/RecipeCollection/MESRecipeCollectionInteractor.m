@@ -4,7 +4,6 @@
 //
 
 #import "MESRecipeCollectionInteractor.h"
-#import "TLIndexPathDataModel.h"
 #import "MESDataStore.h"
 
 
