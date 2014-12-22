@@ -16,7 +16,9 @@
 
 - (void)typhoonDidInject {
     NSLog(@"The datastore I got: %@", self.dataStore);
-    RAC(self, recipeEntities) = [self.dataStore allRecipes];
+    RAC(self, recipeEntities) = [[self.dataStore allRecipes] doNext:^(id thing){
+        NSLog(@"RECIPES RETRIEVED: %@", thing);
+    }];
 }
 
 @end
