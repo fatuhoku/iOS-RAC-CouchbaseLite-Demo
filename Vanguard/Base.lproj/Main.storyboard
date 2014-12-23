@@ -51,7 +51,13 @@
                             <outlet property="delegate" destination="gMw-M9-AJS" id="tYN-PZ-CCc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="rrw-d9-90K"/>
+                    <navigationItem key="navigationItem" id="rrw-d9-90K">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="IYz-pI-w9v">
+                            <connections>
+                                <action selector="didTouchUpInsideCreateNewRecipeButton:" destination="gMw-M9-AJS" id="upk-Mt-lDp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOz-sK-Ens" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

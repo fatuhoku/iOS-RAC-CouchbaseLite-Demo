@@ -4,8 +4,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CBLModel.h"
+#import "MESRecipeEntity.h"
+
+@class CBLQuery;
 
 
-@interface MESRecipe : NSObject
-@property(nonatomic, copy, readonly) NSString *name;
+@interface MESRecipe : CBLModel <MESRecipeEntity>
+@property(nonatomic, copy) NSString *title;
+
++ (NSString *)docType;
+
+// List specific views here; these are exactly the views the application needs to maintain.
++ (CBLQuery *)allRecipesQueryWithDatabase:(CBLDatabase *)database;
 @end

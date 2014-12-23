@@ -6,8 +6,6 @@
 #import <Foundation/Foundation.h>
 
 
-@interface MESRecipeCollection : NSObject
-@property(nonatomic, strong) NSArray *recipes;
-
-- (instancetype)initWithRecipes:(NSArray *)recipes;
+@interface MESUtils : NSObject
++ (void)assertNoError:(NSError *)error;
 @end

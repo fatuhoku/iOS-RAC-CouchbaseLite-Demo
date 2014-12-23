@@ -3,6 +3,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 inhibit_all_warnings!
 
 pod 'BlocksKit'
+pod 'DProperty'
 pod 'Overline-BlocksKit'
 pod 'ReactiveCocoa'
 pod 'TLIndexPathTools'

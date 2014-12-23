@@ -1,5 +1,5 @@
 //
-//  ViperSpec.m
+//  CouchbaseLiteSpec.m
 //  Vanguard-iOS
 //
 //  Created by Hok Shun Poon on 19/12/2014.
@@ -11,9 +11,11 @@
 #import <Expecta/Expecta.h>
 #import <Specta/Specta.h>
 
-SpecBegin(Viper)
+SpecBegin(CouchbaseLite)
 
-describe(@"Viper application", ^{
+describe(@"Couchbase application", ^{
+    it(@"should begin with an empty database", ^{
+    });
 });
 
 SpecEnd

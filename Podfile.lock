@@ -15,6 +15,7 @@ PODS:
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
   - couchbase-lite-ios (1.0.3.1)
+  - DProperty (0.0.2)
   - Expecta (0.3.1)
   - Overline-BlocksKit (0.4.0)
   - ReactiveCocoa (2.4.2):
@@ -33,6 +34,7 @@ PODS:
 DEPENDENCIES:
   - BlocksKit
   - couchbase-lite-ios
+  - DProperty
   - Expecta
   - Overline-BlocksKit
   - ReactiveCocoa
@@ -48,6 +50,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
   couchbase-lite-ios: ad77e90f129f0a2af730a8bb2487a3ec995c0578
+  DProperty: 2a0f2a805ca6b1528262efa964baaca1a444defd
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
   Overline-BlocksKit: 8e9c3a42712fb4227392f9d005e7da34938d2152
   ReactiveCocoa: 8418a82b67af2f1b7587baf29c329040a23c2063
