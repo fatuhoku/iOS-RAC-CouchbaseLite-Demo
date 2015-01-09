@@ -3,6 +3,8 @@
 // Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
+#import "MESCouchbaseLiteDataStore.h"
+#import "MESDataStore.h"
 #import "TLIndexPathController.h"
 #import "MESRecipeCollectionAssembly.h"
 #import "MESSharedAssembly.h"
@@ -22,4 +24,9 @@
     }];
 }
 
+#pragma mark - Data Store
+
+- (id <MESDataStore>)defaultDatastore {
+    return [TyphoonDefinition withClass:[MESCouchbaseLiteDataStore class]];
+}
 @end
