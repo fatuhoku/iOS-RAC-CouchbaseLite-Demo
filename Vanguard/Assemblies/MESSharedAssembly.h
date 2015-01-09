@@ -11,5 +11,6 @@
 
 
 @interface MESSharedAssembly : TyphoonAssembly
+// TODO Avoid directly handling the recipe entity...!
 - (MESRecipeCellViewModel *)recipeCollectionCellViewModelForRecipe:(id <MESRecipeEntity>)recipe;
 @end
