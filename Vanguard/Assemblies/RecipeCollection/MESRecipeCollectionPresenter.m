@@ -19,8 +19,6 @@
 @implementation MESRecipeCollectionPresenter
 
 - (void)typhoonDidInject {
-    self.indexPathController = [TLIndexPathController new];
-
     RAC(self, indexPathController.dataModel) = [RACObserve(self, interactor.recipeEntities) map:^TLIndexPathDataModel *(NSArray *recipeEntities) {
         return [[TLIndexPathDataModel alloc] initWithItems:recipeEntities];
     }];

@@ -3,6 +3,7 @@
 // Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
+#import <TLIndexPathTools/TLIndexPathController.h>
 #import "MESRecipeCollectionAssembly.h"
 #import "MESDataStore.h"
 #import "MESCouchbaseLiteDataStore.h"
@@ -10,12 +11,18 @@
 
 @implementation MESRecipeCollectionAssembly
 
-- (NSArray *)britishRecipes {
-    return @[@"Roast turkey", @"Pie and mash", @"Fish and chips"];
-}
-
 - (id <MESDataStore>)defaultDatastore {
     return [TyphoonDefinition withClass:[MESCouchbaseLiteDataStore class]];
+}
+
+- (TLIndexPathController *)indexPathController {
+    return [TyphoonDefinition withClass:[TLIndexPathController class]];
+}
+
+#pragma mark - Recipes
+
+- (NSArray *)britishRecipes {
+    return @[@"Roast turkey", @"Pie and mash", @"Fish and chips"];
 }
 
 //- (MESRecipeCollection *)japaneseRecipes {
