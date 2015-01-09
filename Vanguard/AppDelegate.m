@@ -31,13 +31,13 @@
     CBLQueryEnumerator *allResults = [allQuery run:&error];
     [MESUtils assertNoError:error];
 
-    NSLog(@"Database has %u documents in it...", allResults.count);
+    NSLog(@"Database has %lu documents in it...", (unsigned long)allResults.count);
 
     CBLQuery *query = [MESRecipe allRecipesQueryWithDatabase:database];
     CBLQueryEnumerator *results = [query run:&error];
     [MESUtils assertNoError:error];
 
-    NSLog(@"of which %u are recipes", results.count);
+    NSLog(@"of which %lu are recipes", (unsigned long)results.count);
     
     if (results.count == 0) {
         NSLog(@"Creating a recipe and saving it...");
