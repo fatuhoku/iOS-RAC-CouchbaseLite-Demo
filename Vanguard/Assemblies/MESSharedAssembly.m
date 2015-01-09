@@ -8,7 +8,7 @@
 #import "TLIndexPathController.h"
 #import "MESRecipeCollectionAssembly.h"
 #import "MESSharedAssembly.h"
-#import "MESRecipeCellViewModel.h"
+#import "MESRecipeCollectionViewCellPresenter.h"
 #import "MESRecipeEntity.h"
 
 
@@ -16,8 +16,8 @@
 
 #pragma mark - Cell View Models
 
-- (MESRecipeCellViewModel *)recipeCollectionCellViewModelForRecipe:(id <MESRecipeEntity>)recipe {
-    return [TyphoonDefinition withClass:[MESRecipeCellViewModel class] configuration:^(TyphoonDefinition *definition) {
+- (MESRecipeCollectionViewCellPresenter *)collectionViewCellPresenterForRecipe:(id <MESRecipeEntity>)recipe {
+    return [TyphoonDefinition withClass:[MESRecipeCollectionViewCellPresenter class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithRecipe:) parameters:^(TyphoonMethod *initializer) {
             [initializer injectParameterWith:recipe];
         }];

@@ -6,6 +6,6 @@
 #import <Foundation/Foundation.h>
 
 
-@interface MESRecipeCellViewModel : NSObject
+@interface MESRecipeCollectionViewCellPresenter : NSObject
 @property(nonatomic, readonly) NSString *title;
 @end

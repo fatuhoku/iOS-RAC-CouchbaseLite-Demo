@@ -5,9 +5,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class MESRecipeCellViewModel;
+@class MESRecipeCollectionViewCellPresenter;
 
 
 @interface MESRecipeCollectionViewCell : UITableViewCell
-@property(nonatomic, strong) MESRecipeCellViewModel *viewModel;
+@property(nonatomic, strong) MESRecipeCollectionViewCellPresenter *viewModel;
 @end

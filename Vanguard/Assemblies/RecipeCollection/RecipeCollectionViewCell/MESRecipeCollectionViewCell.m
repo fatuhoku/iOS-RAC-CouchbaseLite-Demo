@@ -4,7 +4,7 @@
 //
 
 #import "MESRecipeCollectionViewCell.h"
-#import "MESRecipeCellViewModel.h"
+#import "MESRecipeCollectionViewCellPresenter.h"
 
 
 @implementation MESRecipeCollectionViewCell

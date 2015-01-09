@@ -3,7 +3,7 @@
 // Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
-#import "MESRecipeCellViewModel.h"
+#import "MESRecipeCollectionViewCellPresenter.h"
 #import "MESSharedAssembly.h"
 #import "MESRecipeCollectionViewController.h"
 #import <Typhoon/TyphoonAutoInjection.h>
@@ -39,7 +39,7 @@
 }
 
 - (void)configureCell:(MESRecipeCollectionViewCell *)cell withModel:(id)recipe {
-    MESRecipeCellViewModel *viewModel = [self.assembly recipeCollectionCellViewModelForRecipe:recipe];
+    MESRecipeCollectionViewCellPresenter *viewModel = [self.assembly collectionViewCellPresenterForRecipe:recipe];
     cell.viewModel = viewModel;
 }
 
