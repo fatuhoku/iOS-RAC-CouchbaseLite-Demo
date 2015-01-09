@@ -15,7 +15,6 @@
 		0B644C4D1A44CE9400783861 /* CouchbaseLiteSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B644C4C1A44CE9400783861 /* CouchbaseLiteSpec.m */; };
 		1375A4FDDA464F02FDD44777 /* libPods-Vanguard-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */; };
 		886B116078B455666162E5D6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1834B6DEA2C7A1C2B6140641 /* libPods.a */; };
-		E22BA025EB75ECE4ED0AF056 /* MESRecipeCollectionAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAA14BE782B7953F81AC7 /* MESRecipeCollectionAssembly.m */; };
 		E22BA14985AFCA8491DD922F /* MESSharedAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA8C68B03C5E12AC8E9EF /* MESSharedAssembly.m */; };
 		E22BA16593A70F9802EC575B /* CBLDocument+ReactiveCouchbaseLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BABA2BEE519F585F4299D /* CBLDocument+ReactiveCouchbaseLite.m */; };
 		E22BA3B9D60041F1DFB03C7B /* CBLDatabase+ReactiveCouchbaseLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA1C563446239960051D3 /* CBLDatabase+ReactiveCouchbaseLite.m */; };
@@ -81,7 +80,6 @@
 		E22BA5D1CA34C70546DF81AC /* Vanguard-iOS-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Vanguard-iOS-prefix.pch"; sourceTree = "<group>"; };
 		E22BA5EAA22C73B9FCD8B62D /* CBLLiveQuery+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLLiveQuery+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
 		E22BA62DE6269CDD4DF1F355 /* CBLReplication+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLReplication+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
-		E22BA65C7FCAD34D8E2AF4F1 /* MESRecipeCollectionAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionAssembly.h; sourceTree = "<group>"; };
 		E22BA65EB5E6B2061FA5E1FE /* CBLManager+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLManager+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
 		E22BA6692386FE75B10DBF3F /* MESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESUtils.m; sourceTree = "<group>"; };
 		E22BA66FE054121A11DC3951 /* CBLUnsavedRevision+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLUnsavedRevision+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 		E22BA98B7FDA48B368B613BA /* CBLQueryEnumerator+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLQueryEnumerator+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
 		E22BA9AA3030771007767685 /* MESDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESDataStore.h; sourceTree = "<group>"; };
 		E22BA9D036E34D6B066BB75E /* CBLQuery+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLQuery+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
-		E22BAA14BE782B7953F81AC7 /* MESRecipeCollectionAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionAssembly.m; sourceTree = "<group>"; };
 		E22BAA20F6B703A7A347A9E2 /* MESRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipe.m; sourceTree = "<group>"; };
 		E22BAA5A4F1D643E0284261E /* MESRecipeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionViewController.m; sourceTree = "<group>"; };
 		E22BABA2BEE519F585F4299D /* CBLDocument+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLDocument+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
@@ -259,8 +256,6 @@
 				E22BAA5A4F1D643E0284261E /* MESRecipeCollectionViewController.m */,
 				E22BA6D3363BA80997D9D8C6 /* MESRecipeCollectionInteractor.h */,
 				E22BA0134E0083DAED696936 /* MESRecipeCollectionInteractor.m */,
-				E22BAA14BE782B7953F81AC7 /* MESRecipeCollectionAssembly.m */,
-				E22BA65C7FCAD34D8E2AF4F1 /* MESRecipeCollectionAssembly.h */,
 				E22BA5CCF6EAA59567F61878 /* MESRecipeCollectionPresenter.m */,
 				E22BADD70F95F6E70E9BCF6A /* MESRecipeCollectionPresenter.h */,
 				E22BAA8E53FE320297268558 /* RecipeCollectionViewCell */,
@@ -500,7 +495,6 @@
 				0B3A91321A44B82E0032C0AE /* main.m in Sources */,
 				E22BADFFE1BFF2C8C1C9C697 /* MESRecipeCollectionViewController.m in Sources */,
 				E22BAB17D64FEACE949586F9 /* MESRecipeCollectionInteractor.m in Sources */,
-				E22BA025EB75ECE4ED0AF056 /* MESRecipeCollectionAssembly.m in Sources */,
 				E22BA7BB6F86BCAD72A4F6AC /* MESRecipe.m in Sources */,
 				E22BA14985AFCA8491DD922F /* MESSharedAssembly.m in Sources */,
 				E22BA5E5C2D66987B579C1F4 /* MESUtils.m in Sources */,

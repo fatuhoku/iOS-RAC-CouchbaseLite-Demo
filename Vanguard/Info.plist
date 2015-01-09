@@ -24,7 +24,6 @@
 	<true/>
 	<key>TyphoonInitialAssemblies</key>
 	<array>
-		<string>MESRecipeCollectionAssembly</string>
 		<string>MESSharedAssembly</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

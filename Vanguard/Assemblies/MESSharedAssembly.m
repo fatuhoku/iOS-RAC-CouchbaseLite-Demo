@@ -6,7 +6,6 @@
 #import "MESCouchbaseLiteDataStore.h"
 #import "MESDataStore.h"
 #import "TLIndexPathController.h"
-#import "MESRecipeCollectionAssembly.h"
 #import "MESSharedAssembly.h"
 #import "MESRecipeCollectionViewCellPresenter.h"
 #import "MESRecipeEntity.h"
@@ -29,4 +28,11 @@
 - (id <MESDataStore>)defaultDatastore {
     return [TyphoonDefinition withClass:[MESCouchbaseLiteDataStore class]];
 }
+
+#pragma mark - TLIndexPathTools
+
+- (TLIndexPathController *)indexPathController {
+    return [TyphoonDefinition withClass:[TLIndexPathController class]];
+}
+
 @end
