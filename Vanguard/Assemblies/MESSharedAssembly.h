@@ -11,6 +11,6 @@
 
 
 @interface MESSharedAssembly : TyphoonAssembly
-// TODO Avoid directly handling the recipe entity...!
+// Intended to be used by a Presenter to construct cell view models based on a recipe.
 - (MESRecipeCellViewModel *)recipeCollectionCellViewModelForRecipe:(id <MESRecipeEntity>)recipe;
 @end
