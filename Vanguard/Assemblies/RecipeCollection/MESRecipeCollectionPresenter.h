@@ -10,8 +10,8 @@
 
 // Let viewModels be fetched lazily as cells are created. Do not ever be eager about
 // creating these view models.
-@interface MESRecipeCollectionPresenter : NSObject
-@property (nonatomic, strong) TLIndexPathDataModel *recipesDataModel;
+@interface MESRecipeCollectionPresenter : NSObject <UITableViewDataSource>
+@property(nonatomic, strong) InjectedClass(TLIndexPathController)indexPathController;
 @end
 
 @interface MESRecipeCollectionPresenter (Commands)

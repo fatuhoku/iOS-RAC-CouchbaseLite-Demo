@@ -3,15 +3,15 @@
 // Copyright (c) 2014 Hok Shun Poon. All rights reserved.
 //
 
-#import "MESRecipeCellViewModel.h"
+#import "MESRecipeCollectionViewCellPresenter.h"
 #import "MESRecipeEntity.h"
 
 
-@interface MESRecipeCellViewModel ()
+@interface MESRecipeCollectionViewCellPresenter ()
 @property(nonatomic, readwrite) NSString *title;
 @end
 
-@implementation MESRecipeCellViewModel
+@implementation MESRecipeCollectionViewCellPresenter
 
 - (instancetype)initWithRecipe:(id <MESRecipeEntity>)recipe {
     self = [super init];
