@@ -28,6 +28,7 @@
 		E22BA7BB6F86BCAD72A4F6AC /* MESRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAA20F6B703A7A347A9E2 /* MESRecipe.m */; };
 		E22BA7E7F34AA72F0B814176 /* CBLUnsavedRevision+ReactiveCouchbaseLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA66FE054121A11DC3951 /* CBLUnsavedRevision+ReactiveCouchbaseLite.m */; };
 		E22BA7FD5E2C2540B02BE342 /* CBLQueryEnumerator+ReactiveCouchbaseLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAC3D31DC2AD707F1D5EA /* CBLQueryEnumerator+ReactiveCouchbaseLite.m */; };
+		E22BA86C1F02DD900E1820AA /* MESRecipeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAFE0891A9469F12C886D /* MESRecipeCollectionViewCell.m */; };
 		E22BA8773D88ABF98591A7CD /* CBLSavedRevision+ReactiveCouchbaseLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA3150DF86A48419E22AB /* CBLSavedRevision+ReactiveCouchbaseLite.m */; };
 		E22BA8B24870247CDA70D033 /* MESRecipeCollectionPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA5CCF6EAA59567F61878 /* MESRecipeCollectionPresenter.m */; };
 		E22BAAF66D58BB5065774DDA /* RCLDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAE769A48E22DB0A7523C /* RCLDefinitions.m */; };
@@ -104,12 +105,14 @@
 		E22BAC3D31DC2AD707F1D5EA /* CBLQueryEnumerator+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLQueryEnumerator+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
 		E22BAD00B3111F0CD3ADF76A /* MESRecipeEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeEntity.h; sourceTree = "<group>"; };
 		E22BAD12003613474C5F6ADC /* CBLUnsavedRevision+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLUnsavedRevision+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
+		E22BAD2E7FF39B8FA224C162 /* MESRecipeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionViewCell.h; sourceTree = "<group>"; };
 		E22BADD70F95F6E70E9BCF6A /* MESRecipeCollectionPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionPresenter.h; sourceTree = "<group>"; };
 		E22BAE016F659C9ADB687C82 /* CBLReplication+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLReplication+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
 		E22BAE11B0005F692E8D4CD8 /* ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCouchbaseLite.h; sourceTree = "<group>"; };
 		E22BAE769A48E22DB0A7523C /* RCLDefinitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCLDefinitions.m; sourceTree = "<group>"; };
 		E22BAEA2DBB3D5FA4BA84718 /* CBLManager+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLManager+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
 		E22BAF75F042E8CF0DA80E3B /* CBLQuery+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLQuery+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
+		E22BAFE0891A9469F12C886D /* MESRecipeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionViewCell.m; sourceTree = "<group>"; };
 		F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vanguard-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEC3E42479294A0B29912D7 /* Pods-Vanguard-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vanguard-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vanguard-iOSTests/Pods-Vanguard-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +246,8 @@
 			children = (
 				E22BA550B464678854CDEA1A /* MESRecipeCellViewModel.m */,
 				E22BA232895B13F9323A08F7 /* MESRecipeCellViewModel.h */,
+				E22BAFE0891A9469F12C886D /* MESRecipeCollectionViewCell.m */,
+				E22BAD2E7FF39B8FA224C162 /* MESRecipeCollectionViewCell.h */,
 			);
 			path = RecipeCollectionViewCell;
 			sourceTree = "<group>";
@@ -514,6 +519,7 @@
 				E22BA7FD5E2C2540B02BE342 /* CBLQueryEnumerator+ReactiveCouchbaseLite.m in Sources */,
 				E22BA7E7F34AA72F0B814176 /* CBLUnsavedRevision+ReactiveCouchbaseLite.m in Sources */,
 				E22BABA19C77218C2F79F6FF /* MESRecipeCellViewModel.m in Sources */,
+				E22BA86C1F02DD900E1820AA /* MESRecipeCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

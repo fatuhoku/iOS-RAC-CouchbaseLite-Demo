@@ -10,6 +10,7 @@
 #import <TLIndexPathTools/TLIndexPathDataModel.h>
 #import "MESRecipeCollectionPresenter.h"
 #import "MESRecipeCollectionInteractor.h"
+#import "MESRecipeCollectionViewCell.h"
 
 @interface MESRecipeCollectionPresenter ()
 @property(nonatomic, strong) InjectedClass(MESSharedAssembly)assembly;
@@ -29,7 +30,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    id cell = [tableView dequeueReusableCellWithIdentifier:@"ruid_recipeCollectionViewCell" forIndexPath:indexPath];
+    MESRecipeCollectionViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ruid_recipeCollectionViewCell" forIndexPath:indexPath];
 
     id recipe = [self.indexPathController.dataModel itemAtIndexPath:indexPath];
     [self configureCell:cell withModel:recipe];
@@ -37,10 +38,11 @@
     return cell;
 }
 
-- (void)configureCell:(UITableViewCell *)cell withModel:(id)recipe {
+- (void)configureCell:(MESRecipeCollectionViewCell *)cell withModel:(id)recipe {
     MESRecipeCellViewModel *viewModel = [self.assembly recipeCollectionCellViewModelForRecipe:recipe];
-    cell.textLabel.text = viewModel.title;
+    cell.viewModel = viewModel;
 }
+
 @end
 
 @implementation MESRecipeCollectionPresenter (Commands)
