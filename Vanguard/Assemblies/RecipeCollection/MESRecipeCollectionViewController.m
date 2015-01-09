@@ -29,6 +29,9 @@
     NSAssert(self.presenter, @"presenter is nil");
 
     // Can always ask the Presenter for individual view models.
+    // TODO Is there a way that the Presenter can be aware of the indexPathController,
+    // & handle the delegate method AND push updates to the view?
+    // IndexPathController could
     RAC(self, indexPathController.dataModel) = RACObserve(self, presenter.recipesDataModel);
 }
 
