@@ -15,7 +15,7 @@
 		0B644C4D1A44CE9400783861 /* CouchbaseLiteSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B644C4C1A44CE9400783861 /* CouchbaseLiteSpec.m */; };
 		1375A4FDDA464F02FDD44777 /* libPods-Vanguard-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99F3B095B8A4DD70EE73330 /* libPods-Vanguard-iOSTests.a */; };
 		886B116078B455666162E5D6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1834B6DEA2C7A1C2B6140641 /* libPods.a */; };
-		E22BA14985AFCA8491DD922F /* MESSharedAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA8C68B03C5E12AC8E9EF /* MESSharedAssembly.m */; };
+		E22BA14985AFCA8491DD922F /* MESDefaultAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA8C68B03C5E12AC8E9EF /* MESDefaultAssembly.m */; };
 		E22BA16593A70F9802EC575B /* CBLDocument+ReactiveCouchbaseLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BABA2BEE519F585F4299D /* CBLDocument+ReactiveCouchbaseLite.m */; };
 		E22BA3B9D60041F1DFB03C7B /* CBLDatabase+ReactiveCouchbaseLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA1C563446239960051D3 /* CBLDatabase+ReactiveCouchbaseLite.m */; };
 		E22BA3C2A835B762D0974563 /* CBLReplication+ReactiveCouchbaseLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAE016F659C9ADB687C82 /* CBLReplication+ReactiveCouchbaseLite.m */; };
@@ -86,10 +86,10 @@
 		E22BA6ABE37C2DAA1147AC0C /* CBLRevision+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLRevision+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
 		E22BA6D3363BA80997D9D8C6 /* MESRecipeCollectionInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionInteractor.h; sourceTree = "<group>"; };
 		E22BA71FABD2A6F3BE222AAE /* CBLSavedRevision+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLSavedRevision+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
-		E22BA75EAA188750348311E7 /* MESSharedAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESSharedAssembly.h; sourceTree = "<group>"; };
+		E22BA75EAA188750348311E7 /* MESDefaultAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESDefaultAssembly.h; sourceTree = "<group>"; };
 		E22BA82A9A6215FEC5CF52F2 /* CBLLiveQuery+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLLiveQuery+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
 		E22BA8AF18078D3C709BCAAA /* RACSignal+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
-		E22BA8C68B03C5E12AC8E9EF /* MESSharedAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESSharedAssembly.m; sourceTree = "<group>"; };
+		E22BA8C68B03C5E12AC8E9EF /* MESDefaultAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESDefaultAssembly.m; sourceTree = "<group>"; };
 		E22BA95703C5204375E4FDF3 /* MESRecipeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCollectionViewController.h; sourceTree = "<group>"; };
 		E22BA97990EF7B402BA80A56 /* MESUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESUtils.h; sourceTree = "<group>"; };
 		E22BA98B7FDA48B368B613BA /* CBLQueryEnumerator+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLQueryEnumerator+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
@@ -309,8 +309,8 @@
 			isa = PBXGroup;
 			children = (
 				E22BAAE48BDF660F91F39CC6 /* RecipeCollection */,
-				E22BA8C68B03C5E12AC8E9EF /* MESSharedAssembly.m */,
-				E22BA75EAA188750348311E7 /* MESSharedAssembly.h */,
+				E22BA8C68B03C5E12AC8E9EF /* MESDefaultAssembly.m */,
+				E22BA75EAA188750348311E7 /* MESDefaultAssembly.h */,
 			);
 			path = Assemblies;
 			sourceTree = "<group>";
@@ -496,7 +496,7 @@
 				E22BADFFE1BFF2C8C1C9C697 /* MESRecipeCollectionViewController.m in Sources */,
 				E22BAB17D64FEACE949586F9 /* MESRecipeCollectionInteractor.m in Sources */,
 				E22BA7BB6F86BCAD72A4F6AC /* MESRecipe.m in Sources */,
-				E22BA14985AFCA8491DD922F /* MESSharedAssembly.m in Sources */,
+				E22BA14985AFCA8491DD922F /* MESDefaultAssembly.m in Sources */,
 				E22BA5E5C2D66987B579C1F4 /* MESUtils.m in Sources */,
 				E22BA8B24870247CDA70D033 /* MESRecipeCollectionPresenter.m in Sources */,
 				E22BA426D568254EABAC44BF /* MESCouchbaseLiteDataStore.m in Sources */,

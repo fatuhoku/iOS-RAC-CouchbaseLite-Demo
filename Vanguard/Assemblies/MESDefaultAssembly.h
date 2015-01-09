@@ -10,7 +10,7 @@
 @protocol MESRecipeEntity;
 
 
-@interface MESSharedAssembly : TyphoonAssembly
+@interface MESDefaultAssembly : TyphoonAssembly
 // Intended to be used by a Presenter to construct cell view models based on a recipe.
 - (MESRecipeCollectionViewCellPresenter *)collectionViewCellPresenterForRecipe:(id <MESRecipeEntity>)recipe;
 @end

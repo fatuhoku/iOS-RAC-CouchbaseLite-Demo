@@ -6,12 +6,12 @@
 #import "MESCouchbaseLiteDataStore.h"
 #import "MESDataStore.h"
 #import "TLIndexPathController.h"
-#import "MESSharedAssembly.h"
+#import "MESDefaultAssembly.h"
 #import "MESRecipeCollectionViewCellPresenter.h"
 #import "MESRecipeEntity.h"
 
 
-@implementation MESSharedAssembly
+@implementation MESDefaultAssembly
 
 #pragma mark - Cell View Models
 

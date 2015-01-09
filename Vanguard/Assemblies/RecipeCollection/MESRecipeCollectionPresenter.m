@@ -4,7 +4,7 @@
 //
 
 #import "MESRecipeCollectionViewCellPresenter.h"
-#import "MESSharedAssembly.h"
+#import "MESDefaultAssembly.h"
 #import "MESRecipeCollectionViewController.h"
 #import <Typhoon/TyphoonAutoInjection.h>
 #import <TLIndexPathTools/TLIndexPathDataModel.h>
@@ -13,7 +13,7 @@
 #import "MESRecipeCollectionViewCell.h"
 
 @interface MESRecipeCollectionPresenter ()
-@property(nonatomic, strong) InjectedClass(MESSharedAssembly)assembly;
+@property(nonatomic, strong) InjectedClass(MESDefaultAssembly)assembly;
 @property(nonatomic, strong) InjectedClass(MESRecipeCollectionInteractor)interactor;
 @end
 

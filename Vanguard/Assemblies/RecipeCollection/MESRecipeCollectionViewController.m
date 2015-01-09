@@ -9,7 +9,7 @@
 #import <Typhoon/TyphoonAutoInjection.h>
 #import "MESRecipeCollectionViewController.h"
 #import "MESRecipeCollectionPresenter.h"
-#import "MESSharedAssembly.h"
+#import "MESDefaultAssembly.h"
 
 
 @interface MESRecipeCollectionViewController () <TLIndexPathControllerDelegate>
