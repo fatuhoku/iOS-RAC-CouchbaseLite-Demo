@@ -22,12 +22,4 @@
     }];
 }
 
-#pragma mark - TLIndexPathTools
-
-- (TLIndexPathController *)freshIndexPathControllerForViewControllerInitalization {
-    return [TyphoonDefinition withClass:[TLIndexPathController class] configuration:^(TyphoonDefinition *definition) {
-        definition.scope = TyphoonScopePrototype;
-    }];
-}
-
 @end
