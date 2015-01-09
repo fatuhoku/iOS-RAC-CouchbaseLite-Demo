@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "TLTableViewController.h"
 
-@class MESRecipeCollection;
-
 // Write-only. Lets the user write a name. This is stored directly into the model.
 @interface MESRecipeCollectionViewController : UITableViewController
 @end
