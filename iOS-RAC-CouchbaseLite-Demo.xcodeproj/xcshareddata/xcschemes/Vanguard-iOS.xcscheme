@@ -15,8 +15,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B3A912B1A44B82E0032C0AE"
                BuildableName = "Vanguard-iOS.app"
-               BlueprintName = "Vanguard-iOS"
-               ReferencedContainer = "container:Vanguard-iOS.xcodeproj">
+               BlueprintName = "iOS-RAC-CouchbaseLite-Demo"
+               ReferencedContainer = "container:iOS-RAC-CouchbaseLite-Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -43,8 +43,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B3A912B1A44B82E0032C0AE"
             BuildableName = "Vanguard-iOS.app"
-            BlueprintName = "Vanguard-iOS"
-            ReferencedContainer = "container:Vanguard-iOS.xcodeproj">
+            BlueprintName = "iOS-RAC-CouchbaseLite-Demo"
+            ReferencedContainer = "container:iOS-RAC-CouchbaseLite-Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

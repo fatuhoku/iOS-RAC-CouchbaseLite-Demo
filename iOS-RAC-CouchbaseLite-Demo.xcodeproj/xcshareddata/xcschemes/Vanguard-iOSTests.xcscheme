@@ -15,8 +15,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B3A91441A44B82E0032C0AE"
                BuildableName = "Vanguard-iOSTests.xctest"
-               BlueprintName = "Vanguard-iOSTests"
-               ReferencedContainer = "container:Vanguard-iOS.xcodeproj">
+               BlueprintName = "iOS-RAC-CouchbaseLite-DemoTests"
+               ReferencedContainer = "container:iOS-RAC-CouchbaseLite-Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,8 +33,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B3A91441A44B82E0032C0AE"
                BuildableName = "Vanguard-iOSTests.xctest"
-               BlueprintName = "Vanguard-iOSTests"
-               ReferencedContainer = "container:Vanguard-iOS.xcodeproj">
+               BlueprintName = "iOS-RAC-CouchbaseLite-DemoTests"
+               ReferencedContainer = "container:iOS-RAC-CouchbaseLite-Demo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B3A91441A44B82E0032C0AE"
             BuildableName = "Vanguard-iOSTests.xctest"
-            BlueprintName = "Vanguard-iOSTests"
-            ReferencedContainer = "container:Vanguard-iOS.xcodeproj">
+            BlueprintName = "iOS-RAC-CouchbaseLite-DemoTests"
+            ReferencedContainer = "container:iOS-RAC-CouchbaseLite-Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>

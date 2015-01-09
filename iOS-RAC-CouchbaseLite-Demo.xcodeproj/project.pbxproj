@@ -49,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B3A912C1A44B82E0032C0AE /* Vanguard-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vanguard-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3A912C1A44B82E0032C0AE /* iOS-RAC-CouchbaseLite-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-RAC-CouchbaseLite-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3A91301A44B82E0032C0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B3A91311A44B82E0032C0AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0B3A91331A44B82E0032C0AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		0B3A913A1A44B82E0032C0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B3A913C1A44B82E0032C0AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B3A913F1A44B82E0032C0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0B3A91451A44B82E0032C0AE /* Vanguard-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vanguard-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3A91451A44B82E0032C0AE /* iOS-RAC-CouchbaseLite-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-RAC-CouchbaseLite-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3A914A1A44B82E0032C0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B644C4C1A44CE9400783861 /* CouchbaseLiteSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouchbaseLiteSpec.m; sourceTree = "<group>"; };
 		1834B6DEA2C7A1C2B6140641 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +77,7 @@
 		E22BA59363DF169116C41181 /* MESCouchbaseLiteDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESCouchbaseLiteDataStore.h; sourceTree = "<group>"; };
 		E22BA59C449004CB3312BAC5 /* RCLDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCLDefinitions.h; sourceTree = "<group>"; };
 		E22BA5CCF6EAA59567F61878 /* MESRecipeCollectionPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionPresenter.m; sourceTree = "<group>"; };
-		E22BA5D1CA34C70546DF81AC /* Vanguard-iOS-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Vanguard-iOS-prefix.pch"; sourceTree = "<group>"; };
+		E22BA5D1CA34C70546DF81AC /* iOS-RAC-CouchbaseLite-Demo-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS-RAC-CouchbaseLite-Demo-prefix.pch"; sourceTree = "<group>"; };
 		E22BA5EAA22C73B9FCD8B62D /* CBLLiveQuery+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLLiveQuery+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
 		E22BA62DE6269CDD4DF1F355 /* CBLReplication+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLReplication+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
 		E22BA65EB5E6B2061FA5E1FE /* CBLManager+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLManager+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 		0B3A912D1A44B82E0032C0AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B3A912C1A44B82E0032C0AE /* Vanguard-iOS.app */,
-				0B3A91451A44B82E0032C0AE /* Vanguard-iOSTests.xctest */,
+				0B3A912C1A44B82E0032C0AE /* iOS-RAC-CouchbaseLite-Demo.app */,
+				0B3A91451A44B82E0032C0AE /* iOS-RAC-CouchbaseLite-DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 			children = (
 				0B3A91301A44B82E0032C0AE /* Info.plist */,
 				0B3A91311A44B82E0032C0AE /* main.m */,
-				E22BA5D1CA34C70546DF81AC /* Vanguard-iOS-prefix.pch */,
+				E22BA5D1CA34C70546DF81AC /* iOS-RAC-CouchbaseLite-Demo-prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -326,9 +326,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B3A912B1A44B82E0032C0AE /* Vanguard-iOS */ = {
+		0B3A912B1A44B82E0032C0AE /* iOS-RAC-CouchbaseLite-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B3A914F1A44B82E0032C0AE /* Build configuration list for PBXNativeTarget "Vanguard-iOS" */;
+			buildConfigurationList = 0B3A914F1A44B82E0032C0AE /* Build configuration list for PBXNativeTarget "iOS-RAC-CouchbaseLite-Demo" */;
 			buildPhases = (
 				0A7BD44F81BB72154863A013 /* Check Pods Manifest.lock */,
 				0B3A91281A44B82E0032C0AE /* Sources */,
@@ -340,14 +340,14 @@
 			);
 			dependencies = (
 			);
-			name = "Vanguard-iOS";
+			name = "iOS-RAC-CouchbaseLite-Demo";
 			productName = Vanguard;
-			productReference = 0B3A912C1A44B82E0032C0AE /* Vanguard-iOS.app */;
+			productReference = 0B3A912C1A44B82E0032C0AE /* iOS-RAC-CouchbaseLite-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0B3A91441A44B82E0032C0AE /* Vanguard-iOSTests */ = {
+		0B3A91441A44B82E0032C0AE /* iOS-RAC-CouchbaseLite-DemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B3A91521A44B82E0032C0AE /* Build configuration list for PBXNativeTarget "Vanguard-iOSTests" */;
+			buildConfigurationList = 0B3A91521A44B82E0032C0AE /* Build configuration list for PBXNativeTarget "iOS-RAC-CouchbaseLite-DemoTests" */;
 			buildPhases = (
 				5D1EAFC2B5ACB8E7E26A3FB5 /* Check Pods Manifest.lock */,
 				0B3A91411A44B82E0032C0AE /* Sources */,
@@ -360,9 +360,9 @@
 			dependencies = (
 				0B3A91471A44B82E0032C0AE /* PBXTargetDependency */,
 			);
-			name = "Vanguard-iOSTests";
+			name = "iOS-RAC-CouchbaseLite-DemoTests";
 			productName = VanguardTests;
-			productReference = 0B3A91451A44B82E0032C0AE /* Vanguard-iOSTests.xctest */;
+			productReference = 0B3A91451A44B82E0032C0AE /* iOS-RAC-CouchbaseLite-DemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -384,7 +384,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0B3A91271A44B82E0032C0AE /* Build configuration list for PBXProject "Vanguard-iOS" */;
+			buildConfigurationList = 0B3A91271A44B82E0032C0AE /* Build configuration list for PBXProject "iOS-RAC-CouchbaseLite-Demo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -397,8 +397,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B3A912B1A44B82E0032C0AE /* Vanguard-iOS */,
-				0B3A91441A44B82E0032C0AE /* Vanguard-iOSTests */,
+				0B3A912B1A44B82E0032C0AE /* iOS-RAC-CouchbaseLite-Demo */,
+				0B3A91441A44B82E0032C0AE /* iOS-RAC-CouchbaseLite-DemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -530,7 +530,7 @@
 /* Begin PBXTargetDependency section */
 		0B3A91471A44B82E0032C0AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0B3A912B1A44B82E0032C0AE /* Vanguard-iOS */;
+			target = 0B3A912B1A44B82E0032C0AE /* iOS-RAC-CouchbaseLite-Demo */;
 			targetProxy = 0B3A91461A44B82E0032C0AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -640,10 +640,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Vanguard/Vanguard-iOS-prefix.pch";
+				GCC_PREFIX_HEADER = "Vanguard/iOS-RAC-CouchbaseLite-Demo-prefix.pch";
 				INFOPLIST_FILE = Vanguard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "Vanguard-iOS";
+				PRODUCT_NAME = "iOS-RAC-CouchbaseLite-Demo";
 			};
 			name = Debug;
 		};
@@ -654,10 +654,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Vanguard/Vanguard-iOS-prefix.pch";
+				GCC_PREFIX_HEADER = "Vanguard/iOS-RAC-CouchbaseLite-Demo-prefix.pch";
 				INFOPLIST_FILE = Vanguard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "Vanguard-iOS";
+				PRODUCT_NAME = "iOS-RAC-CouchbaseLite-Demo";
 			};
 			name = Release;
 		};
@@ -676,7 +676,7 @@
 				);
 				INFOPLIST_FILE = VanguardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "Vanguard-iOSTests";
+				PRODUCT_NAME = "iOS-RAC-CouchbaseLite-DemoTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanguard-iOS.app/Vanguard-iOS";
 			};
 			name = Debug;
@@ -692,7 +692,7 @@
 				);
 				INFOPLIST_FILE = VanguardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "Vanguard-iOSTests";
+				PRODUCT_NAME = "iOS-RAC-CouchbaseLite-DemoTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vanguard-iOS.app/Vanguard-iOS";
 			};
 			name = Release;
@@ -700,7 +700,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B3A91271A44B82E0032C0AE /* Build configuration list for PBXProject "Vanguard-iOS" */ = {
+		0B3A91271A44B82E0032C0AE /* Build configuration list for PBXProject "iOS-RAC-CouchbaseLite-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B3A914D1A44B82E0032C0AE /* Debug */,
@@ -709,7 +709,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B3A914F1A44B82E0032C0AE /* Build configuration list for PBXNativeTarget "Vanguard-iOS" */ = {
+		0B3A914F1A44B82E0032C0AE /* Build configuration list for PBXNativeTarget "iOS-RAC-CouchbaseLite-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B3A91501A44B82E0032C0AE /* Debug */,
@@ -718,7 +718,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B3A91521A44B82E0032C0AE /* Build configuration list for PBXNativeTarget "Vanguard-iOSTests" */ = {
+		0B3A91521A44B82E0032C0AE /* Build configuration list for PBXNativeTarget "iOS-RAC-CouchbaseLite-DemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B3A91531A44B82E0032C0AE /* Debug */,
