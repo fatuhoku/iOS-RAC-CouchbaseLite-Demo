@@ -32,9 +32,9 @@
 		E22BA8B24870247CDA70D033 /* MESRecipeCollectionPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA5CCF6EAA59567F61878 /* MESRecipeCollectionPresenter.m */; };
 		E22BAAF66D58BB5065774DDA /* RCLDefinitions.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAE769A48E22DB0A7523C /* RCLDefinitions.m */; };
 		E22BAB17D64FEACE949586F9 /* MESRecipeCollectionInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA0134E0083DAED696936 /* MESRecipeCollectionInteractor.m */; };
+		E22BABA19C77218C2F79F6FF /* MESRecipeCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA550B464678854CDEA1A /* MESRecipeCellViewModel.m */; };
 		E22BABDF75102FE5BBBF3A99 /* CBLRevision+ReactiveCouchbaseLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA33A9C783D1E6DDE6296 /* CBLRevision+ReactiveCouchbaseLite.m */; };
 		E22BADFFE1BFF2C8C1C9C697 /* MESRecipeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BAA5A4F1D643E0284261E /* MESRecipeCollectionViewController.m */; };
-		E22BAE76E630E6C5FEE61807 /* MESRecipeCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA2429E0C3ECA46968758 /* MESRecipeCellViewModel.m */; };
 		E22BAF47D533515C0103F993 /* CBLLiveQuery+ReactiveCouchbaseLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E22BA82A9A6215FEC5CF52F2 /* CBLLiveQuery+ReactiveCouchbaseLite.m */; };
 /* End PBXBuildFile section */
 
@@ -69,11 +69,11 @@
 		E22BA0C1BC85574CAECFD978 /* RACSignal+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
 		E22BA1396E6B41A19580861E /* CBLDatabase+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLDatabase+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
 		E22BA1C563446239960051D3 /* CBLDatabase+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLDatabase+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
-		E22BA2429E0C3ECA46968758 /* MESRecipeCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MESRecipeCellViewModel.m; path = RecipeCollection/MESRecipeCellViewModel.m; sourceTree = "<group>"; };
+		E22BA232895B13F9323A08F7 /* MESRecipeCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESRecipeCellViewModel.h; sourceTree = "<group>"; };
 		E22BA3150DF86A48419E22AB /* CBLSavedRevision+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLSavedRevision+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
-		E22BA33A688C6B639780F2E6 /* MESRecipeCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MESRecipeCellViewModel.h; path = RecipeCollection/MESRecipeCellViewModel.h; sourceTree = "<group>"; };
 		E22BA33A9C783D1E6DDE6296 /* CBLRevision+ReactiveCouchbaseLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLRevision+ReactiveCouchbaseLite.m"; sourceTree = "<group>"; };
 		E22BA4B7119AAAC748FA349E /* CBLDocument+ReactiveCouchbaseLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLDocument+ReactiveCouchbaseLite.h"; sourceTree = "<group>"; };
+		E22BA550B464678854CDEA1A /* MESRecipeCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCellViewModel.m; sourceTree = "<group>"; };
 		E22BA59363DF169116C41181 /* MESCouchbaseLiteDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MESCouchbaseLiteDataStore.h; sourceTree = "<group>"; };
 		E22BA59C449004CB3312BAC5 /* RCLDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCLDefinitions.h; sourceTree = "<group>"; };
 		E22BA5CCF6EAA59567F61878 /* MESRecipeCollectionPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MESRecipeCollectionPresenter.m; sourceTree = "<group>"; };
@@ -238,6 +238,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E22BAA8E53FE320297268558 /* RecipeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E22BA550B464678854CDEA1A /* MESRecipeCellViewModel.m */,
+				E22BA232895B13F9323A08F7 /* MESRecipeCellViewModel.h */,
+			);
+			path = RecipeCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		E22BAAE48BDF660F91F39CC6 /* RecipeCollection */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +258,7 @@
 				E22BA65C7FCAD34D8E2AF4F1 /* MESRecipeCollectionAssembly.h */,
 				E22BA5CCF6EAA59567F61878 /* MESRecipeCollectionPresenter.m */,
 				E22BADD70F95F6E70E9BCF6A /* MESRecipeCollectionPresenter.h */,
+				E22BAA8E53FE320297268558 /* RecipeCollectionViewCell */,
 			);
 			path = RecipeCollection;
 			sourceTree = "<group>";
@@ -301,8 +311,6 @@
 				E22BAAE48BDF660F91F39CC6 /* RecipeCollection */,
 				E22BA8C68B03C5E12AC8E9EF /* MESSharedAssembly.m */,
 				E22BA75EAA188750348311E7 /* MESSharedAssembly.h */,
-				E22BA2429E0C3ECA46968758 /* MESRecipeCellViewModel.m */,
-				E22BA33A688C6B639780F2E6 /* MESRecipeCellViewModel.h */,
 			);
 			path = Assemblies;
 			sourceTree = "<group>";
@@ -492,7 +500,6 @@
 				E22BA14985AFCA8491DD922F /* MESSharedAssembly.m in Sources */,
 				E22BA5E5C2D66987B579C1F4 /* MESUtils.m in Sources */,
 				E22BA8B24870247CDA70D033 /* MESRecipeCollectionPresenter.m in Sources */,
-				E22BAE76E630E6C5FEE61807 /* MESRecipeCellViewModel.m in Sources */,
 				E22BA426D568254EABAC44BF /* MESCouchbaseLiteDataStore.m in Sources */,
 				E22BAAF66D58BB5065774DDA /* RCLDefinitions.m in Sources */,
 				E22BA5B819B428F04CFDB34E /* CBLQuery+ReactiveCouchbaseLite.m in Sources */,
@@ -506,6 +513,7 @@
 				E22BA8773D88ABF98591A7CD /* CBLSavedRevision+ReactiveCouchbaseLite.m in Sources */,
 				E22BA7FD5E2C2540B02BE342 /* CBLQueryEnumerator+ReactiveCouchbaseLite.m in Sources */,
 				E22BA7E7F34AA72F0B814176 /* CBLUnsavedRevision+ReactiveCouchbaseLite.m in Sources */,
+				E22BABA19C77218C2F79F6FF /* MESRecipeCellViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
